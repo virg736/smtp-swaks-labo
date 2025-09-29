@@ -35,6 +35,13 @@ Il est particulièrement utilisé en sécurité et en administration système ca
 
 ---
 
+- **SPF** (Sender Policy Framework) : permet au propriétaire d’un domaine de définir quels serveurs sont autorisés à envoyer des e-mails en son nom.  
+- **DKIM** (DomainKeys Identified Mail) : ajoute une signature cryptographique aux e-mails pour garantir que le message n’a pas été modifié et qu’il provient bien du domaine revendiqué.  
+- **DMARC** (Domain-based Message Authentication, Reporting and Conformance) : combine SPF et DKIM et précise aux serveurs destinataires comment traiter les e-mails qui échouent aux vérifications (surveillance, quarantaine ou rejet).  
+
+---
+
+
 ## Objectifs pédagogiques
 - Comprendre le dialogue SMTP (EHLO/HELO, MAIL FROM, RCPT TO, DATA).  
 - Illustrer pourquoi SMTP par défaut permet, l'usurpation d'expéditeur (spoofing).  
