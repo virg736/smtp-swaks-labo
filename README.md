@@ -278,6 +278,12 @@ Attention : de nombreux fournisseurs exigent une authentification pour la remise
 
 ---
 
+<p align="center">
+  <img src="script_spoofing.PNG" alt="Exécution du script de vérification DNS" width="600">
+</p>
+
+
+
 6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC
 
 Exemples avec dig (remplacez example.com par le domaine de test) :
