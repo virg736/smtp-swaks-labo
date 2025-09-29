@@ -47,3 +47,31 @@ Objectifs pédagogiques :
 1. Suivre `docs/demo_smtp_swaks.md` pour installer et lancer la démo en local.
 2. Sauvegarder les artefacts générés dans `artifacts/`.
 3. Compléter `docs/protections_email.md` dans le repo avec conclusions et recommandations.
+
+
+---
+# Demo SMTP — Swaks + aiosmtpd (guide pas à pas)
+
+> Tout se fait **en local** sur une VM Parrot OS ou dans un laboratoire isolé. N’exécutez jamais ces procédures sur des systèmes tiers sans autorisation écrite.
+
+## Objectif
+Montrer comment :
+- créer un serveur SMTP local (aiosmtpd) pour capter des messages de test ;
+- envoyer des e-mails de test avec `swaks` ;
+- observer et interpréter le dialogue SMTP (client ↔ serveur) ;
+- sauvegarder des artefacts (traces) exploitables pour un rapport pédagogique.
+
+---
+
+## Pré-requis (VM Parrot OS / Debian-like)
+- Système à jour :
+
+  sudo apt update && sudo apt upgrade -y
+
+	•	Installer outils de base :
+
+sudo apt install -y swaks dnsutils openssl git
+
+
+
+
