@@ -1,5 +1,7 @@
 
-# Test SMTP pédagogique avec **swaks** (guide & labo)
+# Du spoofing à la sécurité e-mail
+
+Test SMTP pédagogique avec **swaks** (guide & labo)
 
 **Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
 ⚠️ **Usage pédagogique uniquement** - Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, **obtenez une autorisation écrite** (Rules of Engagement).
@@ -28,15 +30,15 @@ Points essentiels :
 
 **Swaks** (*Swiss Army Knife for SMTP*) est un outil en ligne de commande conçu pour tester et diagnostiquer les serveurs SMTP.  
 Il est particulièrement utilisé en sécurité et en administration système car il permet de :  
-- simuler l’envoi d’un e-mail avec des paramètres personnalisés.  
-- observer en détail le dialogue SMTP entre le client et le serveur.  
-- tester des mécanismes de sécurité comme **STARTTLS**, **authentification SMTP**, **SPF/DKIM/DMARC**.  
+- simuler l’envoi d’un e-mail avec des paramètres personnalisés,  
+- observer en détail le dialogue SMTP entre le client et le serveur,  
+- tester des mécanismes de sécurité comme **STARTTLS**, **authentification SMTP**, **SPF/DKIM/DMARC**,  
 - générer des traces exploitables dans un rapport d’audit ou de formation.  
 
 ---
 
-- **SPF** (Sender Policy Framework) : permet au propriétaire d’un domaine de définir quels serveurs sont autorisés à envoyer des e-mails en son nom.    
-- **DKIM** (DomainKeys Identified Mail) : ajoute une signature cryptographique aux e-mails pour garantir que le message n’a pas été modifié et qu’il provient bien du domaine revendiqué.    
+- **SPF** (Sender Policy Framework) : permet au propriétaire d’un domaine de définir quels serveurs sont autorisés à envoyer des e-mails en son nom.  
+- **DKIM** (DomainKeys Identified Mail) : ajoute une signature cryptographique aux e-mails pour garantir que le message n’a pas été modifié et qu’il provient bien du domaine revendiqué.  
 - **DMARC** (Domain-based Message Authentication, Reporting and Conformance) : combine SPF et DKIM et précise aux serveurs destinataires comment traiter les e-mails qui échouent aux vérifications (surveillance, quarantaine ou rejet).  
 
 ---
