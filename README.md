@@ -37,9 +37,9 @@ Objectifs pédagogiques :
 ---
 
 ## Règles d'or (lecture obligatoire)
-- N’exécute jamais ces scripts sur des hôtes tiers ou en production.
-- Utilise `example.com` dans la documentation publique si tu fais des captures.
-- Conserve les preuves dans `artifacts/` et anonymise si tu publies.
+- N’exécutez jamais ces scripts sur des hôtes tiers ou en production.
+- Utilisez `example.com` dans la documentation publique si tu fais des captures.
+- Conservez les preuves dans `artifacts/` et anonymise si tu publies.
 
 ---
 
