@@ -13,7 +13,7 @@ Ce projet montre comment :
 
 ## Objectifs pédagogiques
 - Comprendre le dialogue SMTP (EHLO/HELO, MAIL FROM, RCPT TO, DATA).  
-- Illustrer pourquoi SMTP par défaut permet l’usurpation d’expéditeur (spoofing).  
+- Illustrer pourquoi SMTP par défaut permet l'usurpation d'expéditeur (spoofing).  
 - Vérifier et interpréter SPF / DKIM / DMARC et STARTTLS/TLS.  
 - Produire des artefacts (sorties swaks, logs) exploitables en audit pédagogique.
 
@@ -26,9 +26,9 @@ Ce projet montre comment :
 - `artifacts/` - sorties de tests (texte).  
 
 ## Règles d'or (lecture obligatoire)
-- N’exécutez jamais ces scripts sur des hôtes tiers ou en production sans autorisation explicite.  
+- N'exécutez jamais ces scripts sur des hôtes tiers ou en production sans autorisation explicite.  
 - Utilisez `example.com` dans la documentation publique et anonymisez les données réelles dans `artifacts/`.  
-- Conservez les preuves dans `artifacts/` et anonymisez avant publication.
+- Conservez les preuves dans `artifacts/` et anonymisez-les avant publication.
 
 ## Prochaines étapes rapides
 1. Lisez `ROE_MINI.md`.  
@@ -43,7 +43,7 @@ Ce projet montre comment :
 > Tout se fait **en local** sur une VM Parrot OS ou dans un laboratoire isolé. N’exécutez jamais ces procédures sur des systèmes tiers sans autorisation écrite.
 
 ## Objectif
-Montrer comment :
+Montrer comment:
 - créer un serveur SMTP local (aiosmtpd) pour capter des messages de test ;
 - envoyer des e-mails de test avec `swaks` ;
 - observer et interpréter le dialogue SMTP (client ↔ serveur) ;
