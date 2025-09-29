@@ -133,7 +133,7 @@ swaks --to test@example.com \
       --timeout 15 \
   | tee artifacts/test_local_aiosmtpd_$(date +%Y%m%d_%H%M%S).txt
 
-Vous obtiendrez :
+Vous obtiendrez :  
 	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par Swaks);
 	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
 
