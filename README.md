@@ -23,12 +23,7 @@
 </p>
 
 
-<!-- Badges (centrés) : CI, License MIT, Creative Commons -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Bash%20CI-passing-brightgreen" alt="Bash CI">
-  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License MIT">
-  <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png" alt="Creative Commons BY-ND">
-</p>
+
 
 <!-- Image de couverture (centrée) -->
 <p align="center">
