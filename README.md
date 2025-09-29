@@ -39,9 +39,7 @@ Reproduction interdite sans autorisation préalable. Usage pédagogique uniqueme
 
 ---
 
-<p align="center">
-  <span style="font-size:60px; font-weight:bold;">📧 Du spoofing à la sécurité e-mail</span>
-</p>
+## Du spoofing à la sécurité e-mail
 
 ---
 
