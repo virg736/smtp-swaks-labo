@@ -112,6 +112,13 @@ aiosmtpd -n -l 127.0.0.1:1025
 
 *Figure : sortie montrant la commande `pipx install aiosmtpd` suivie de `pipx ensurepath`.*
 
+**Capture d’écran — ajout au PATH et rechargement du shell**
+
+<p align="center">
+  <img src="./swaks3.PNG" alt="Ajout PATH et rechargement shell" width="720"/>
+</p>
+
+*Figure : commande `pipx ensurepath` puis `source ~/.bashrc`.*
 
 ---
 
