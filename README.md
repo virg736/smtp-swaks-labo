@@ -61,7 +61,7 @@ sudo apt install -y swaks dnsutils openssl git
 
 ## Installation — capture
 
-**Capture d'écran — installation de `swaks`**
+**Capture d'écran - installation de `swaks`**
 
 <p align="center">
   <img src="swaks1.PNG" alt="Installation de swaks sur Parrot OS" width="720">
@@ -80,7 +80,7 @@ pipx ensurepath
 pipx install aiosmtpd
 
 
-### Capture d'écran — installation de `aiosmtpd` avec pipx
+### Capture d'écran - installation de `aiosmtpd` avec pipx
 
 <p align="center">
   <img src="swaks2.PNG" alt="Installation de aiosmtpd avec pipx sur Parrot OS" width="720">
@@ -132,7 +132,7 @@ Vous obtiendrez :
 	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks);
 	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
 
-**Capture d’écran — envoi d’un e-mail de test avec Swaks**
+**Capture d’écran - envoi d’un e-mail de test avec Swaks**
 
 <p align="center">
   <img src="./swaks4.PNG" alt="Envoi d’un mail de test avec swaks" width="720"/>
