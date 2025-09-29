@@ -40,6 +40,34 @@ Il est particulièrement utilisé en sécurité et en administration système ca
 👉 Ces définitions introduisent bien le contexte avant de passer aux manipulations pratiques (installation, tests, etc.).
 
 
+# Introduction
+
+## Qu’est-ce que SMTP ?
+
+**SMTP** (*Simple Mail Transfer Protocol*) est le protocole standard utilisé pour l’envoi de courriels sur Internet.  
+Il définit comment un client (ex. un logiciel de messagerie ou un script) communique avec un serveur de messagerie pour transmettre un message électronique.  
+
+Points essentiels :  
+- SMTP fonctionne en mode texte : les échanges se font sous forme de commandes et de réponses lisibles.  
+- Par défaut, SMTP ne vérifie pas l’authenticité de l’expéditeur → c’est pourquoi il est vulnérable au **spoofing** (usurpation d’adresse e-mail).  
+- Pour sécuriser les échanges, on ajoute des mécanismes comme **STARTTLS/TLS**, **SPF**, **DKIM** et **DMARC**.
+
+---
+
+## Qu’est-ce que Swaks ?
+
+**Swaks** (*Swiss Army Knife for SMTP*) est un outil en ligne de commande conçu pour tester et diagnostiquer les serveurs SMTP.  
+Il est particulièrement utilisé en sécurité et en administration système car il permet de :  
+- simuler l’envoi d’un e-mail avec des paramètres personnalisés,  
+- observer en détail le dialogue SMTP entre le client et le serveur,  
+- tester des mécanismes de sécurité comme **STARTTLS**, **authentification SMTP**, **SPF/DKIM/DMARC**,  
+- générer des traces exploitables dans un rapport d’audit ou de formation.  
+
+---
+
+👉 Ces définitions introduisent bien le contexte avant de passer aux manipulations pratiques (installation, tests, etc.).
+
+
 
 
 ## Objectifs pédagogiques
