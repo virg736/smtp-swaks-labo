@@ -3,7 +3,6 @@
   <strong style="font-size:28px;">Du spoofing à la sécurité e-mail</strong>
 </p>
 
-![Check DNS](https://github.com/virg736/smtp-swaks-labo/actions/workflows/check-dns.yml/badge.svg)
 
 <!-- Badges (centrés) : CI, License MIT, Creative Commons -->
 <p align="center">
