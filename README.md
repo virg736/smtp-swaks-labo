@@ -95,10 +95,9 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install aiosmtpd
 
-
 Créez les dossiers :
 
-mkdir -p ~/projet-smtp-swaks/{docs,scripts,artifacts}
+mkdir -p ~/projet-smtp-swaks/{docs,scripts,artifacts}  
 cd ~/projet-smtp-swaks
 
 1) Démarrer le serveur SMTP local (Terminal A)
