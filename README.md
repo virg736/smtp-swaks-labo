@@ -4,6 +4,25 @@
 </p>
 
 
+<p align="center">
+  <!-- Badge Actions cliquable -->
+  <a href="https://github.com/virg736/smtp-swaks-labo/actions/workflows/check-dns.yml">
+    <img src="https://github.com/virg736/smtp-swaks-labo/actions/workflows/check-dns.yml/badge.svg" alt="Check DNS (SPF/DKIM/DMARC) – status">
+  </a>
+
+  <!-- Autres badges cliquables (optionnels) -->
+  <a href="https://github.com/virg736/smtp-swaks-labo/actions">
+    <img src="https://img.shields.io/badge/Bash%20CI-passing-brightgreen" alt="Bash CI passing">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue" alt="License MIT">
+  </a>
+  <a href="https://creativecommons.org/licenses/by-nd/3.0/">
+    <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png" alt="CC BY-ND 3.0">
+  </a>
+</p>
+
+
 <!-- Badges (centrés) : CI, License MIT, Creative Commons -->
 <p align="center">
   <img src="https://img.shields.io/badge/Bash%20CI-passing-brightgreen" alt="Bash CI">
