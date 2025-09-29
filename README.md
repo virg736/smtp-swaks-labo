@@ -109,11 +109,6 @@ aiosmtpd -n -l 127.0.0.1:1025
 •	-n : ne pas daemoniser (le serveur reste au premier plan et affiche les messages reçus).
 •	Laissez ce terminal ouvert : il affichera les messages au format brut (en-têtes + corps).
 
-**Capture d’écran — configuration de pipx et aiosmtpd**
-
-<p align="center">
-  <img src="images/swaks3.PNG" alt="Configuration de pipx et installation de aiosmtpd sur Parrot OS" width="720">
-</p>
 
 *Figure : sortie montrant la commande `pipx install aiosmtpd` suivie de `pipx ensurepath`.*
 
@@ -138,21 +133,6 @@ Vous obtiendrez :
 	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
 
 
-**Capture d’écran — envoi et réception d’un e-mail de test avec Swaks**
-
-<p align="center">
-  <img src="images/swaks4.PNG" alt="Envoi et réception SMTP local avec Swaks et aiosmtpd" width="720">
-</p>
-
-*Figure : trace complète du dialogue SMTP (`MAIL FROM`, `RCPT TO`, `DATA`, `250 OK`) observée avec Swaks et le serveur local aiosmtpd.*
-
-
-
-**Capture d’écran — envoi et réception d’un e-mail de test avec Swaks**
-
-<p align="center">
-  <img src="images/swaks4.PNG" alt="Envoi et réception SMTP local avec Swaks et aiosmtpd" width="720">
-</p>
 
 *Figure : trace complète du dialogue SMTP (`MAIL FROM`, `RCPT TO`, `DATA`, `250 OK`) observée avec Swaks et le serveur local aiosmtpd.*
 
