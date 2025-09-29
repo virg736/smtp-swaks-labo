@@ -1,4 +1,27 @@
+<!-- Titre (centré) -->
+<p align="center">
+  <strong style="font-size:28px;">Du spoofing à la sécurité e-mail</strong>
+</p>
 
+<!-- Badges (centrés) : CI, License MIT, Creative Commons -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Bash%20CI-passing-brightgreen" alt="Bash CI">
+  <img src="https://img.shields.io/badge/License-MIT-blue" alt="License MIT">
+  <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png" alt="Creative Commons BY-ND">
+</p>
+
+<!-- Image de couverture (centrée) -->
+<p align="center">
+  <img src="Photo%20spoofing.jpg" alt="Spoofing" width="800">
+</p>
+
+<!-- Texte copyright et usage (centré) -->
+<p align="center">
+© 2025 Virginie Lechene - Tous droits réservés<br>
+Reproduction interdite sans autorisation préalable. Usage pédagogique uniquement.
+</p>
+
+<p align="center"><em>Image protégée – Propriété exclusive</em></p>
 
 
 Test SMTP pédagogique avec **swaks** (guide & labo)
