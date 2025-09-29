@@ -1,3 +1,21 @@
+Test SMTP pédagogique avec Swaks (guide & labo)
+
+Niveau : pentester / ingénierie sécurité (pédagogique, contrôlé)
+
+⚠️ Usage pédagogique uniquement — Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, obtenez une autorisation écrite (Rules of Engagement).
+
+⸻
+
+Résumé
+
+Ce projet montre comment :
+	•	créer un serveur SMTP local (simulation avec aiosmtpd),
+	•	tester l’envoi d’e-mails avec swaks,
+	•	observer le dialogue SMTP côté client/serveur,
+	•	vérifier et interpréter les protections e-mail : SPF, DKIM, DMARC, TLS.
+
+
+
 # Test SMTP pédagogique avec **swaks** (guide & labo)
 
 **Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
