@@ -267,6 +267,16 @@ Un attaquant cherche simplement à **faire croire** qu’un message provient d�
 
 ---
 
+> 🛡️ **Note de sécurité :**  
+> Pour protéger efficacement une adresse e-mail et éviter l’usurpation (spoofing), il est essentiel de configurer les mécanismes suivants au niveau de votre domaine :  
+> - **SPF** : définit quels serveurs sont autorisés à envoyer des e-mails pour votre domaine.  
+> - **DKIM** : ajoute une signature numérique aux messages pour garantir leur intégrité et leur authenticité.  
+> - **DMARC** : combine SPF et DKIM et indique aux serveurs destinataires comment traiter les messages non conformes (surveillance, quarantaine ou rejet).  
+
+
+
+
+
 ✍️ Auteur : *Virginie Lechene*
 
 ---
