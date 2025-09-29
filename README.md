@@ -1,10 +1,3 @@
-<!-- Titre (centré) -->
-<p align="center">
-  <strong style="font-size:28px;">Du spoofing à la sécurité e-mail</strong>
-</p>
-<p align="center">
-  <strong style="font-size:40px;">📧 Du spoofing à la sécurité e-mail</strong>
-</p>
 
 <p align="center">
   <!-- Badge Actions cliquable -->
