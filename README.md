@@ -35,11 +35,9 @@ Ce projet montre comment :
 3. Sauvegardez les artefacts générés dans `artifacts/`.  
 4. Complétez `docs/protections_email.md` avec vos conclusions.
 
-Bonne démonstration - et dites-moi si vous voulez que je crée les fichiers dans votre repo directement.
-
 ---
 
-# Demo SMTP — Swaks + aiosmtpd (guide pas à pas)
+# Demo SMTP - Swaks + aiosmtpd (guide pas à pas)
 
 > Tout se fait **en local** sur une VM Parrot OS ou dans un laboratoire isolé. N’exécutez jamais ces procédures sur des systèmes tiers sans autorisation écrite.
 
