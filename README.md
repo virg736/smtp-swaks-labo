@@ -79,10 +79,10 @@ pipx ensurepath
   
 pipx install aiosmtpd
 
-### Capture d'écran - installation de `aiosmtpd` avec pipx
+### Capture d'écran - installation `d'aiosmtpd` avec pipx
 
 <p align="center">
-  <img src="swaks2.PNG" alt="Installation de aiosmtpd avec pipx sur Parrot OS" width="720">
+  <img src="swaks2.PNG" alt="Installation d'aiosmtpd avec pipx sur Parrot OS" width="720">
 </p>
 
 **Figure :** sortie montrant la commande `pipx install aiosmtpd` et le message de succès  
@@ -103,7 +103,6 @@ cd ~/projet-smtp-swaks
 1) Démarrer le serveur SMTP local (Terminal A)
 
 Lancez aiosmtpd pour écouter sur l’interface locale (port 1025) :
-
 aiosmtpd -n -l 127.0.0.1:1025
 
 •	-n : ne pas daemoniser (le serveur reste au premier plan et affiche les messages reçus).
@@ -112,7 +111,7 @@ aiosmtpd -n -l 127.0.0.1:1025
 
 *Figure : sortie montrant la commande `pipx install aiosmtpd` suivie de `pipx ensurepath`.*
 
-**Capture d’écran — ajout au PATH et rechargement du shell**
+**Capture d’écran - ajout au PATH et rechargement du shell**
 
 <p align="center">
   <img src="./swaks3.PNG" alt="Ajout PATH et rechargement shell" width="720"/>
