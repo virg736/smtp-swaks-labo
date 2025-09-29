@@ -121,7 +121,7 @@ aiosmtpd -n -l 127.0.0.1:1025
 
 ---
 
-2) Envoyer un e-mail de test avec Swaks (Terminal B)
+2) Envoyer un e-mail de test avec Swaks (Terminal B)  
 Dans un autre terminal, exécutez :
 
 cd ~/projet-smtp-swaks
