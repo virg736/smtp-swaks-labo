@@ -1,17 +1,7 @@
 
 # Du spoofing à la sécurité e-mail
 
-<!-- Image de couverture (centrée) -->
-<p align="center">
-  <img src="Photo%20spoofing.jpg" alt="Spoofing" width="800">
-</p>
 
-<!-- Badge licence (centré) -->
-<p align="center">
-  <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/virg736/smtp-swaks-labo?color=brightgreen" alt="license">
-  </a>
-</p>
 
 
 Test SMTP pédagogique avec **swaks** (guide & labo)
