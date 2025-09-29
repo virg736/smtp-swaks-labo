@@ -29,7 +29,7 @@ Ce projet montre comment :
 **SMTP** (*Simple Mail Transfer Protocol*) est le protocole standard utilisé pour l’envoi de courriels sur Internet.  
 Il définit comment un client (ex. un logiciel de messagerie ou un script) communique avec un serveur de messagerie pour transmettre un message électronique.  
 
-Points essentiels :  
+✅ Points essentiels :  
 - SMTP fonctionne en mode texte : les échanges se font sous forme de commandes et de réponses lisibles.  
 - Par défaut, SMTP ne vérifie pas l’authenticité de l’expéditeur → c’est pourquoi il est vulnérable au **spoofing** (usurpation d’adresse e-mail).  
 - Pour sécuriser les échanges, on ajoute des mécanismes comme **STARTTLS/TLS**, **SPF**, **DKIM** et **DMARC**.
@@ -60,7 +60,7 @@ Il est particulièrement utilisé en sécurité et en administration système ca
 - Vérifier et interpréter SPF / DKIM / DMARC et STARTTLS/TLS.  
 - Produire des artefacts (sorties swaks, logs) exploitables en audit pédagogique.
 
-## Contenu du dépôt (extrait)
+## ✅ Contenu du dépôt (extrait)
 - `README.md` - introduction (ce fichier).  
 - `docs/demo_smtp_swaks.md` - guide pas-à-pas (installation, création serveur local, tests).  
 - `docs/protections_email.md` - explication SPF/DKIM/DMARC/TLS et recommandations.  
@@ -187,8 +187,6 @@ Vous obtiendrez :
 <p align="center">
   <img src="./swaks4.PNG" alt="Envoi d’un mail de test avec swaks" width="720"/>
 </p>
-
-*Figure : dialogue SMTP complet (EHLO, MAIL FROM, RCPT TO, DATA, QUIT).*
 
 *Figure : trace complète du dialogue SMTP (`MAIL FROM`, `RCPT TO`, `DATA`, `250 OK`) observée avec Swaks et le serveur local aiosmtpd.*
 
