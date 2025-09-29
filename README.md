@@ -27,12 +27,12 @@ Objectifs pédagogiques :
 ---
 
 ## Contenu du dépôt (extrait)
-- `README.md` — introduction (ce fichier).
-- `docs/demo_smtp_swaks.md` — guide pas-à-pas (installation, création serveur local, tests).
-- `docs/protections_email.md` — explication SPF/DKIM/DMARC/TLS et pourquoi protéger.
-- `scripts/run_demo.sh` — script safe (local only) : démarre serveur local, lance swaks, sauvegarde traces.
-- `artifacts/` — sorties de tests (texte).
-- `SAFE_NOTICE.md` / `ROE_MINI.md` — notices d’usage pédagogique.
+- `README.md` - introduction (ce fichier).
+- `docs/demo_smtp_swaks.md` - guide pas-à-pas (installation, création serveur local, tests).
+- `docs/protections_email.md` - explication SPF/DKIM/DMARC/TLS et pourquoi protéger.
+- `scripts/run_demo.sh` - script safe (local only) : démarre serveur local, lance swaks, sauvegarde traces.
+- `artifacts/` - sorties de tests (texte).
+- `SAFE_NOTICE.md` / `ROE_MINI.md` - notices d’usage pédagogique.
 
 ---
 
