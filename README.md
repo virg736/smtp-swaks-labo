@@ -1,4 +1,41 @@
+# Test SMTP pédagogique avec **swaks** (guide & labo)
 
+**Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
+⚠️ **Usage pédagogique uniquement** — Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, **obtenez une autorisation écrite** (Rules of Engagement).
+
+## Résumé
+Ce projet montre comment :
+- créer un **serveur SMTP local** (simulation avec `aiosmtpd`),  
+- tester l’envoi d’e-mails avec `swaks`,  
+- observer le **dialogue SMTP** côté client/serveur,  
+- vérifier et interpréter les protections e-mail : **SPF, DKIM, DMARC, TLS**.
+
+## Objectifs pédagogiques
+- Comprendre le dialogue SMTP (EHLO/HELO, MAIL FROM, RCPT TO, DATA).  
+- Illustrer pourquoi SMTP par défaut permet l’usurpation d’expéditeur (spoofing).  
+- Vérifier et interpréter SPF / DKIM / DMARC et STARTTLS/TLS.  
+- Produire des artefacts (sorties swaks, logs) exploitables en audit pédagogique.
+
+## Contenu du dépôt (extrait)
+- `README.md` — introduction (ce fichier).  
+- `docs/demo_smtp_swaks.md` — guide pas-à-pas (installation, création serveur local, tests).  
+- `docs/protections_email.md` — explication SPF/DKIM/DMARC/TLS et recommandations.  
+- `ROE_MINI.md` — modèle minimal Rules of Engagement (lecture obligatoire).  
+- `scripts/run_demo.sh` — script safe (local only) : démarre serveur local, lance swaks, sauvegarde traces.  
+- `artifacts/` — sorties de tests (texte).  
+
+## Règles d'or (lecture obligatoire)
+- N’exécutez jamais ces scripts sur des hôtes tiers ou en production sans autorisation explicite.  
+- Utilisez `example.com` dans la documentation publique et anonymisez les données réelles dans `artifacts/`.  
+- Conservez les preuves dans `artifacts/` et anonymisez avant publication.
+
+## Prochaines étapes rapides
+1. Lisez `ROE_MINI.md`.  
+2. Suivez `docs/demo_smtp_swaks.md` pour lancer la démo en local (Parrot OS).  
+3. Sauvegardez les artefacts générés dans `artifacts/`.  
+4. Complétez `docs/protections_email.md` avec vos conclusions.
+
+Bonne démonstration — et dites-moi si vous voulez que je crée les fichiers dans votre repo directement.
 
 
 ---
