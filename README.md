@@ -323,9 +323,7 @@ Un attaquant cherche simplement à **faire croire** qu’un message provient d�
 > - **DKIM** : ajoute une signature numérique aux messages pour garantir leur intégrité et leur authenticité.  
 > - **DMARC** : combine SPF et DKIM et indique aux serveurs destinataires comment traiter les messages non conformes (surveillance, quarantaine ou rejet).  
 
-
-
-
+---
 
 ✍️ Auteur : *Virginie Lechene*
 
