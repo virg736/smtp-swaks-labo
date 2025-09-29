@@ -163,7 +163,7 @@ Interprétez :
 	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.
 	•	DMARC p=none → monitoring ; p=quarantine/p=reject → enforcement.
 
-⸻
+---
 
 7) Nettoyage
 
