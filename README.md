@@ -4,6 +4,7 @@
 Test SMTP pédagogique avec **swaks** (guide & labo)
 
 **Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
+
 ⚠️ **Usage pédagogique uniquement** - Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, **obtenez une autorisation écrite** (Rules of Engagement).
 
 ## Résumé
