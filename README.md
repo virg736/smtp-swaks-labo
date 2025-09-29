@@ -72,6 +72,32 @@ Montrer comment :
 
 sudo apt install -y swaks dnsutils openssl git
 
+	Installer pipx puis aiosmtpd (méthode recommandée) :
+
+sudo apt install -y pipx
+pipx ensurepath
+# relancer le shell si nécessaire : source ~/.bashrc
+pipx install aiosmtpd
+
+Remarque : si pipx n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python :
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install aiosmtpd
+
+Arborescence recommandée du projet
+
+projet-smtp-swaks/
+├─ README.md
+├─ docs/
+│  ├─ demo_smtp_swaks.md
+│  └─ protections_email.md
+├─ scripts/
+│  └─ run_demo.sh
+└─ artifacts/
+
+
 
 
 
