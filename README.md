@@ -86,18 +86,6 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install aiosmtpd
 
-Arborescence recommandée du projet
-
-projet-smtp-swaks/
-├─ README.md
-├─ docs/
-│  ├─ demo_smtp_swaks.md
-│  └─ protections_email.md
-├─ scripts/
-│  └─ run_demo.sh
-└─ artifacts/
-
-
 
 
 
