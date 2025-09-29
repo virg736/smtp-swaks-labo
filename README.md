@@ -7,11 +7,7 @@ Avant toute action sur des systèmes réels, obtenir une **autorisation écrite*
 
 ---
 
-## Résumé
 
-Ce projet montre comment **créer un serveur SMTP local**, **tester** l’envoi d’e-mails avec `swaks`, **observer** le dialogue SMTP côté client/serveur et **expliquer** les protections e-mail critiques : **SPF, DKIM, DMARC, TLS**.
-
-Objectifs pédagogiques :
 - Comprendre le dialogue SMTP (EHLO/HELO, MAIL FROM, RCPT TO, DATA).
 - Montrer pourquoi SMTP par défaut permet l’usurpation d’expéditeur (spoofing).
 - Vérifier et interpréter les protections de domaine (SPF/DKIM/DMARC) et le transport sécurisé (STARTTLS/TLS).
