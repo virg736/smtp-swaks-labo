@@ -98,9 +98,9 @@ Lancez aiosmtpd pour écouter sur l’interface locale (port 1025) :
 aiosmtpd -n -l 127.0.0.1:1025
 
 •	-n : ne pas daemoniser (le serveur reste au premier plan et affiche les messages reçus).
-	•	Laissez ce terminal ouvert : il affichera les messages au format brut (en-têtes + corps).
+•	Laissez ce terminal ouvert : il affichera les messages au format brut (en-têtes + corps).
 
-⸻
+---
 
 2) Envoyer un e-mail de test avec Swaks (Terminal B)
 
@@ -119,7 +119,7 @@ Vous obtiendrez :
 	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks);
 	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
 
-⸻
+---
 
 3) Interpréter le dialogue SMTP (ce qu’il faut vérifier)
 
@@ -134,7 +134,7 @@ Lors d’une transaction réussie, observez les étapes suivantes :
 
 Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM. C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté destinataire.
 
-⸻
+---
 
 4) Sauvegarder et vérifier les artefacts
 
@@ -149,7 +149,7 @@ less artifacts/test_local_aiosmtpd_*.txt
 
 Conservez ces fichiers dans le dépôt (ou hors dépôt si sensibles) pour preuve et reporting. Anonymisez avant publication.
 
-⸻
+---
 
 5) Test TLS / STARTTLS (conceptuel)
 
@@ -161,9 +161,9 @@ swaks --to test@example.com --from demo@lab.local \
 
 Attention : de nombreux fournisseurs exigent une authentification pour la remise ; la connexion peut aussi être bloquée par la NAT/FAI. Ce test sert principalement à vérifier la présence et la négociation TLS.
 
-⸻
+---
 
-6) Vérification DNS (lecture seule) — SPF / DKIM / DMARC
+6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC
 
 Exemples avec dig (remplacez example.com par le domaine de test) :
 
