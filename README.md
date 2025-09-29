@@ -39,6 +39,12 @@ Reproduction interdite sans autorisation préalable. Usage pédagogique uniqueme
 
 ---
 
+<p align="center">
+  <span style="font-size:40px; font-weight:bold;">📧 Du spoofing à la sécurité e-mail</span>
+</p>
+
+---
+
 Test SMTP pédagogique avec **swaks** (guide & labo)
 
 **Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
