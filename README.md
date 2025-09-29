@@ -90,20 +90,11 @@ pipx install aiosmtpd
 
 **Remarque :** si `pipx` n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python :  
 
-```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 pip install aiosmtpd
 
-*Figure : sortie montrant la commande `pipx install aiosmtpd` et le message de succès (aiosmtpd installé et disponible localement).*
-
-Remarque : si pipx n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python :
-
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install aiosmtpd
 
 Créez les dossiers :
 
