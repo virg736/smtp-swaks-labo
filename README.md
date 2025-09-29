@@ -163,6 +163,8 @@ Lors d’une transaction réussie, observez les étapes suivantes :
 Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM.  
 C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté destinataire.
 
+---
+
 4) Sauvegarder et vérifier les artefacts  
 Lister les artefacts :  
 ls -lh artifacts/
@@ -173,6 +175,8 @@ less artifacts/test_local_aiosmtpd_*.txt
 Conservez ces fichiers dans le dépôt (ou hors dépôt si sensibles) pour preuve et reporting.  
 Anonymisez avant publication.
 
+---
+
 5) Test TLS / STARTTLS (conceptuel)
 
 Si vous souhaitez observer la négociation TLS avec un serveur externe (ex. smtp.gmail.com), utilisez :
@@ -181,28 +185,28 @@ swaks --to test@example.com --from demo@lab.local \
       --server smtp.gmail.com --port 587 --starttls --timeout 20 \
   | tee artifacts/test_starttls_$(date +%Y%m%d_%H%M%S).txt
 
-Attention : de nombreux fournisseurs exigent une authentification pour la remise ; la connexion peut aussi être bloquée par la NAT/FAI. Ce test sert principalement à vérifier la présence et la négociation TLS.
+Attention : de nombreux fournisseurs exigent une authentification pour la remise ; la connexion peut aussi être bloquée par la NAT/ le FAI.  
+Ce test sert principalement à vérifier la présence et la négociation TLS.
 
 ---
 
-6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC
+6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
 
-Exemples avec dig (remplacez example.com par le domaine de test) :
+Exemples avec dig (remplacez example.com par le domaine de test) :  
 
-dig +short MX example.com
+dig +short MX example.com  
 dig +short TXT example.com             # rechercher v=spf1
 dig +short TXT _dmarc.example.com      # enregistrement DMARC
 dig +short TXT selector._domainkey.example.com  # test DKIM (selector)
 
-Interprétez :
-	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.
-	•	DMARC p=none → monitoring ; p=quarantine/p=reject → enforcement.
+Interprétez :  
+	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.  
+	•	DMARC p=none → monitoring ; p=quarantine/p=reject → application stricte.  
 
 ---
 
 7) Nettoyage
 
-Si aiosmtpd a été lancé en arrière-plan, arrêtez-le :
-
+Si aiosmtpd a été lancé en arrière-plan, arrêtez-le :  
 pkill -f aiosmtpd || true
 
