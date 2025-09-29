@@ -278,6 +278,16 @@ Attention : de nombreux fournisseurs exigent une authentification pour la remise
 
 ---
 
+## ✅ Test du script
+
+J’ai exécuté le script `check_dns.sh` dans ma VM Parrot OS pour vérifier les enregistrements DNS (SPF, DKIM, DMARC).  
+Le test est concluant ✅ : le script fonctionne correctement comme prévu.
+
+<p align="center">
+  <img src="script_spoofing.PNG" alt="Exécution du script de vérification DNS" width="700">
+</p>
+
+
 <p align="center">
   <img src="script_spoofing.PNG" alt="Exécution du script de vérification DNS" width="600">
 </p>
