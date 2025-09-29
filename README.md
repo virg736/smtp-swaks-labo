@@ -38,30 +38,28 @@ Ce projet montre comment :
 
 ---
 
-# Demo SMTP - Swaks + aiosmtpd (guide pas à pas)
+# Démo SMTP - Swaks + aiosmtpd (guide pas à pas)
 
 > Tout se fait **en local** sur une VM Parrot OS ou dans un laboratoire isolé. N’exécutez jamais ces procédures sur des systèmes tiers sans autorisation écrite.
 
-## Objectif
+## Objectifs
 Montrer comment:
-- créer un serveur SMTP local (aiosmtpd) pour capter des messages de test ;
-- envoyer des e-mails de test avec `swaks` ;
-- observer et interpréter le dialogue SMTP (client ↔ serveur) ;
-- sauvegarder des artefacts (traces) exploitables pour un rapport pédagogique.
+-  créer un serveur SMTP local (aiosmtpd) pour capter des messages de test ;
+-  envoyer des e-mails de test avec `swaks` ;
+-  observer et interpréter le dialogue SMTP (client ↔ serveur) ;
+-  sauvegarder des artefacts (traces) exploitables pour un rapport pédagogique.
 
 ---
 
-## Pré-requis (VM Parrot OS / Debian-like)
+## Prérequis (VM Parrot OS / système de type Debian)
+
 - Système à jour :
+sudo apt update && sudo apt upgrade -y
 
-  sudo apt update && sudo apt upgrade -y
-
-	•	Installer outils de base :
-
+-  Installer les outils de base :
 sudo apt install -y swaks dnsutils openssl git
 
-## Installation — capture
-
+## Installation - capture
 **Capture d'écran - installation de `swaks`**
 
 <p align="center">
@@ -70,8 +68,7 @@ sudo apt install -y swaks dnsutils openssl git
 
 *Figure : sortie montrant la commande `sudo apt install swaks` (swaks déjà installé sur la VM Parrot).*
 
-*Figure : sortie montrant la commande `sudo apt install swaks` (swaks déjà installé sur la VM Parrot OS).*
-
+---
 
 Installer pipx puis aiosmtpd (méthode recommandée) :
 
@@ -79,7 +76,6 @@ sudo apt install -y pipx
 pipx ensurepath
 # relancer le shell si nécessaire : source ~/.bashrc
 pipx install aiosmtpd
-
 
 ### Capture d'écran - installation de `aiosmtpd` avec pipx
 
