@@ -1,7 +1,7 @@
 # Test SMTP pédagogique avec **swaks** (guide & labo)
 
 **Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
-⚠️ **Usage pédagogique uniquement** — Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, **obtenez une autorisation écrite** (Rules of Engagement).
+⚠️ **Usage pédagogique uniquement** - Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, **obtenez une autorisation écrite** (Rules of Engagement).
 
 ## Résumé
 Ce projet montre comment :
@@ -17,12 +17,12 @@ Ce projet montre comment :
 - Produire des artefacts (sorties swaks, logs) exploitables en audit pédagogique.
 
 ## Contenu du dépôt (extrait)
-- `README.md` — introduction (ce fichier).  
-- `docs/demo_smtp_swaks.md` — guide pas-à-pas (installation, création serveur local, tests).  
-- `docs/protections_email.md` — explication SPF/DKIM/DMARC/TLS et recommandations.  
-- `ROE_MINI.md` — modèle minimal Rules of Engagement (lecture obligatoire).  
-- `scripts/run_demo.sh` — script safe (local only) : démarre serveur local, lance swaks, sauvegarde traces.  
-- `artifacts/` — sorties de tests (texte).  
+- `README.md` - introduction (ce fichier).  
+- `docs/demo_smtp_swaks.md` - guide pas-à-pas (installation, création serveur local, tests).  
+- `docs/protections_email.md` - explication SPF/DKIM/DMARC/TLS et recommandations.  
+- `ROE_MINI.md` - modèle minimal Rules of Engagement (lecture obligatoire).  
+- `scripts/run_demo.sh` - script safe (local only) : démarre serveur local, lance swaks, sauvegarde traces.  
+- `artifacts/` - sorties de tests (texte).  
 
 ## Règles d'or (lecture obligatoire)
 - N’exécutez jamais ces scripts sur des hôtes tiers ou en production sans autorisation explicite.  
@@ -35,10 +35,10 @@ Ce projet montre comment :
 3. Sauvegardez les artefacts générés dans `artifacts/`.  
 4. Complétez `docs/protections_email.md` avec vos conclusions.
 
-Bonne démonstration — et dites-moi si vous voulez que je crée les fichiers dans votre repo directement.
-
+Bonne démonstration - et dites-moi si vous voulez que je crée les fichiers dans votre repo directement.
 
 ---
+
 # Demo SMTP — Swaks + aiosmtpd (guide pas à pas)
 
 > Tout se fait **en local** sur une VM Parrot OS ou dans un laboratoire isolé. N’exécutez jamais ces procédures sur des systèmes tiers sans autorisation écrite.
