@@ -12,8 +12,6 @@ Ce projet montre comment :
 - vérifier et interpréter les protections e-mail : **SPF, DKIM, DMARC, TLS**.
 
 
-# Introduction
-
 ## Qu’est-ce que SMTP ?
 
 **SMTP** (*Simple Mail Transfer Protocol*) est le protocole standard utilisé pour l’envoi de courriels sur Internet.  
