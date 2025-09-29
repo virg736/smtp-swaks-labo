@@ -79,6 +79,15 @@ pipx ensurepath
 # relancer le shell si nécessaire : source ~/.bashrc
 pipx install aiosmtpd
 
+
+### Capture d'écran — installation de `aiosmtpd` avec pipx
+
+<p align="center">
+  <img src="swaks2.PNG" alt="Installation de aiosmtpd avec pipx sur Parrot OS" width="720">
+</p>
+
+*Figure : sortie montrant la commande `pipx install aiosmtpd` et le message de succès (aiosmtpd installé et disponible localement).*
+
 Remarque : si pipx n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python :
 
 python3 -m venv .venv
