@@ -13,7 +13,7 @@ Ce projet montre comment :
 
 ## Objectifs pédagogiques
 - Comprendre le dialogue SMTP (EHLO/HELO, MAIL FROM, RCPT TO, DATA).  
-- Illustrer pourquoi SMTP par défaut permet l'usurpation d'expéditeur (spoofing).  
+- Illustrer pourquoi SMTP par défaut permet, l'usurpation d'expéditeur (spoofing).  
 - Vérifier et interpréter SPF / DKIM / DMARC et STARTTLS/TLS.  
 - Produire des artefacts (sorties swaks, logs) exploitables en audit pédagogique.
 
