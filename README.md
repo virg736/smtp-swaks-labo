@@ -1,6 +1,12 @@
 
 # Du spoofing à la sécurité e-mail
 
+
+<!-- Image de couverture (centrée) -->
+<p align="center">
+  <img src="Photo%20spoofing.jpg" alt="Spoofing" width="800">
+</p>
+
 Test SMTP pédagogique avec **swaks** (guide & labo)
 
 **Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
