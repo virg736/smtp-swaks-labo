@@ -12,11 +12,7 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-blue" alt="License MIT">
   </a>
-  <a href="https://creativecommons.org/licenses/by-nd/3.0/">
-    <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png" alt="CC BY-ND 3.0">
-  </a>
-</p>
-
+  
 
 
 
