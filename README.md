@@ -7,6 +7,15 @@ Test SMTP pédagogique avec **swaks** (guide & labo)
 
 ⚠️ **Usage pédagogique uniquement** - Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, **obtenez une autorisation écrite** (Rules of Engagement).
 
+## Pré-requis minimum (résumé)
+
+- Solides connaissances Linux & réseau (TCP/IP, DNS, SMTP).  
+- Maîtrise de la ligne de commande et des outils réseau (`swaks`, `dig`, `openssl`).  
+- Connaissances pratiques de `SPF` / `DKIM` / `DMARC` et `STARTTLS` / `TLS`.
+
+---
+
+
 ## Résumé
 Ce projet montre comment :
 - créer un **serveur SMTP local** (simulation avec `aiosmtpd`),  
