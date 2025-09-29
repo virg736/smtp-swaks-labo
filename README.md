@@ -100,7 +100,7 @@ Créez les dossiers :
 mkdir -p ~/projet-smtp-swaks/{docs,scripts,artifacts}  
 cd ~/projet-smtp-swaks
 
-1) Démarrer le serveur SMTP local (Terminal A)
+1 - Démarrer le serveur SMTP local (Terminal A)
 
 Lancez aiosmtpd pour écouter sur l’interface locale (port 1025) :
 aiosmtpd -n -l 127.0.0.1:1025
@@ -121,7 +121,7 @@ aiosmtpd -n -l 127.0.0.1:1025
 
 ---
 
-2) Envoyer un e-mail de test avec Swaks (Terminal B)  
+2 - Envoyer un e-mail de test avec Swaks (Terminal B)  
  Dans un autre terminal, exécutez :
 
 cd ~/projet-smtp-swaks
@@ -149,7 +149,7 @@ Vous obtiendrez :
 
 ---
 
-3) Interpréter le dialogue SMTP (ce qu’il faut vérifier)
+3 - Interpréter le dialogue SMTP (ce qu’il faut vérifier)
 
 Lors d’une transaction réussie, observez les étapes suivantes :  
 	•	220 : salutation du serveur (prêt)  
@@ -165,7 +165,8 @@ C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté
 
 ---
 
-4) Sauvegarder et vérifier les artefacts  
+4 - Sauvegarder et vérifier les artefacts  
+
 Lister les artefacts :  
 ls -lh artifacts/
 
@@ -177,7 +178,7 @@ Anonymisez avant publication.
 
 ---
 
-5) Test TLS / STARTTLS (conceptuel)
+5 - Test TLS / STARTTLS (conceptuel)
 
 Si vous souhaitez observer la négociation TLS avec un serveur externe (ex. smtp.gmail.com), utilisez :
 
@@ -190,7 +191,7 @@ Ce test sert principalement à vérifier la présence et la négociation TLS.
 
 ---
 
-6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
+ 6 - Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
 
 Exemples avec dig (remplacez example.com par le domaine de test) :  
 
@@ -205,8 +206,33 @@ Interprétez :
 
 ---
 
-7) Nettoyage
+7 - Nettoyage
 
 Si aiosmtpd a été lancé en arrière-plan, arrêtez-le :  
 pkill -f aiosmtpd || true
+
+---
+✍️ Auteur : *Virginie Lechene*
+
+---
+
+## Licence
+Le script est publié sous la licence MIT.
+
+## À propos de l’usage
+Ce projet est destiné exclusivement à des fins pédagogiques, notamment dans le cadre de :
+- d’une formation en cybersécurité,
+- de tests d’intrusion légaux (pentest),
+- d’analyses réseau dans un environnement contrôlé.
+
+⚠️ L’auteure ne cautionne ni n’autorise l’utilisation de ce script en dehors d’un cadre légal strictement défini.
+Toute utilisation non conforme est interdite et relève uniquement de la responsabilité de l’utilisateur.
+
+## Droits sur les visuels
+Les visuels, illustrations ou captures présents dans ce dépôt sont la propriété exclusive de l’auteure.
+Toute reproduction ou utilisation non autorisée est interdite.
+
+
+
+
 
