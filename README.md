@@ -35,11 +35,7 @@ Reproduction interdite sans autorisation préalable. Usage pédagogique uniqueme
 
 <p align="center">
   <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png" alt="Creative Commons BY-ND">
-</p>
 
----
-
-## Du spoofing à la sécurité e-mail
 
 ---
 
