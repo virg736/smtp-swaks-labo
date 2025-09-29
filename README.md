@@ -102,7 +102,7 @@ sudo apt update && sudo apt upgrade -y
 -  Installer les outils de base :
 sudo apt install -y swaks dnsutils openssl git
 
-## Installation - capture
+## ✅ Installation - capture
 **Capture d'écran - installation de `swaks`**
 
 <p align="center">
@@ -122,7 +122,7 @@ pipx ensurepath
   
 pipx install aiosmtpd
 
-### Capture d'écran - installation de `aiosmtpd` avec pipx
+### ✅ Capture d'écran - installation de `aiosmtpd` avec pipx
 
 <p align="center">
   <img src="swaks2.PNG" alt="Installation de aiosmtpd avec pipx sur Parrot OS" width="720">
@@ -155,7 +155,7 @@ aiosmtpd -n -l 127.0.0.1:1025
 
 *Figure : sortie montrant la commande `pipx install aiosmtpd` suivie de `pipx ensurepath`.*
 
-**Capture d’écran — ajout au PATH et rechargement du shell**
+** ✅ Capture d’écran - ajout au PATH et rechargement du shell**
 
 <p align="center">
   <img src="./swaks3.PNG" alt="Ajout PATH et rechargement shell" width="720"/>
@@ -182,7 +182,7 @@ Vous obtiendrez :
 	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks);
 	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
 
-**Capture d’écran - envoi d’un e-mail de test avec Swaks**
+** ✅ Capture d’écran - envoi d’un e-mail de test avec Swaks**
 
 <p align="center">
   <img src="./swaks4.PNG" alt="Envoi d’un mail de test avec swaks" width="720"/>
@@ -218,7 +218,6 @@ ls -lh artifacts/
 Afficher le contenu d’un artefact :
 
 less artifacts/test_local_aiosmtpd_*.txt
-
 
 Conservez ces fichiers dans le dépôt (ou hors dépôt si sensibles) pour preuve et reporting. Anonymisez avant publication.
 
