@@ -85,6 +85,17 @@ pipx install aiosmtpd
   <img src="swaks2.PNG" alt="Installation de aiosmtpd avec pipx sur Parrot OS" width="720">
 </p>
 
+**Figure :** sortie montrant la commande `pipx install aiosmtpd` et le message de succès  
+(aiosmtpd installé et disponible localement).
+
+**Remarque :** si `pipx` n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python :  
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install aiosmtpd
+
 *Figure : sortie montrant la commande `pipx install aiosmtpd` et le message de succès (aiosmtpd installé et disponible localement).*
 
 Remarque : si pipx n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python :
