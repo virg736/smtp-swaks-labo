@@ -59,7 +59,16 @@ Montrer comment :
 
 sudo apt install -y swaks dnsutils openssl git
 
-	Installer pipx puis aiosmtpd (méthode recommandée) :
+**Capture d'écran — installation de `swaks`**
+
+<p align="center">
+  <img src="images/swaks1.PNG" alt="Installation de swaks sur Parrot OS" width="720">
+</p>
+
+*Figure : sortie montrant la commande `sudo apt install swaks` (swaks déjà installé sur la VM Parrot OS).*
+
+
+Installer pipx puis aiosmtpd (méthode recommandée) :
 
 sudo apt install -y pipx
 pipx ensurepath
