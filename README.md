@@ -86,6 +86,101 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install aiosmtpd
 
+Créez les dossiers :
+
+mkdir -p ~/projet-smtp-swaks/{docs,scripts,artifacts}
+cd ~/projet-smtp-swaks
+
+1) Démarrer le serveur SMTP local (Terminal A)
+
+Lancez aiosmtpd pour écouter sur l’interface locale (port 1025) :
+
+aiosmtpd -n -l 127.0.0.1:1025
+
+•	-n : ne pas daemoniser (le serveur reste au premier plan et affiche les messages reçus).
+	•	Laissez ce terminal ouvert : il affichera les messages au format brut (en-têtes + corps).
+
+⸻
+
+2) Envoyer un e-mail de test avec Swaks (Terminal B)
+
+Dans un autre terminal, exécutez :
+
+cd ~/projet-smtp-swaks
+swaks --to test@example.com \
+      --from demo@lab.local \
+      --server 127.0.0.1 --port 1025 \
+      --header "Subject: Test SMTP local" \
+      --body "Ceci est un test local. Date: $(date -u)" \
+      --timeout 15 \
+  | tee artifacts/test_local_aiosmtpd_$(date +%Y%m%d_%H%M%S).txt
+
+Vous obtiendrez :
+	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks);
+	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
+
+⸻
+
+3) Interpréter le dialogue SMTP (ce qu’il faut vérifier)
+
+Lors d’une transaction réussie, observez les étapes suivantes :
+	•	220 : salutation du serveur (prêt)
+	•	EHLO / HELO : présentation du client (capabilities)
+	•	MAIL FROM: : adresse déclarée de l’expéditeur (champ déclaratif)
+	•	RCPT TO: : destinataire déclaré
+	•	DATA → 354 : serveur attend le corps du message
+	•	. → 250 OK : message accepté
+	•	QUIT → 221 : fin de session
+
+Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM. C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté destinataire.
+
+⸻
+
+4) Sauvegarder et vérifier les artefacts
+
+Lister les artefacts :
+
+ls -lh artifacts/
+
+Afficher le contenu d’un artefact :
+
+less artifacts/test_local_aiosmtpd_*.txt
 
 
+Conservez ces fichiers dans le dépôt (ou hors dépôt si sensibles) pour preuve et reporting. Anonymisez avant publication.
+
+⸻
+
+5) Test TLS / STARTTLS (conceptuel)
+
+Si vous souhaitez observer la négociation TLS avec un serveur externe (ex. smtp.gmail.com), utilisez :
+
+swaks --to test@example.com --from demo@lab.local \
+      --server smtp.gmail.com --port 587 --starttls --timeout 20 \
+  | tee artifacts/test_starttls_$(date +%Y%m%d_%H%M%S).txt
+
+Attention : de nombreux fournisseurs exigent une authentification pour la remise ; la connexion peut aussi être bloquée par la NAT/FAI. Ce test sert principalement à vérifier la présence et la négociation TLS.
+
+⸻
+
+6) Vérification DNS (lecture seule) — SPF / DKIM / DMARC
+
+Exemples avec dig (remplacez example.com par le domaine de test) :
+
+dig +short MX example.com
+dig +short TXT example.com             # rechercher v=spf1
+dig +short TXT _dmarc.example.com      # enregistrement DMARC
+dig +short TXT selector._domainkey.example.com  # test DKIM (selector)
+
+Interprétez :
+	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.
+	•	DMARC p=none → monitoring ; p=quarantine/p=reject → enforcement.
+
+⸻
+
+7) Nettoyage
+
+Si aiosmtpd a été lancé en arrière-plan, arrêtez-le :
+
+pkill -f aiosmtpd || true
 
