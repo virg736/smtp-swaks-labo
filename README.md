@@ -259,24 +259,13 @@ pkill -f aiosmtpd || true
 
 ---
 
-## ⚠️ Comment un attaquant peut usurper une adresse e-mail (explication non technique)
-Note : un futur module présentera, à des fins pédagogiques et sur un banc d’essai contrôlé, les techniques d’usurpation d’adresse e-mail et les contre-mesures associées.
+## ⚠️ Comment un attaquant peut usurper une adresse e-mail (explication non technique)  
+
+Note : un futur module présentera, à des fins pédagogiques et sur un banc d’essai contrôlé, les techniques d’usurpation d’adresse e-mail et les contre-mesures associées.  
+
 Un attaquant cherche simplement à **faire croire** qu’un message provient d’une source de confiance (banque, collègue, service). Pour cela, il manipule les éléments visibles du message (expéditeur, objet, contenu) afin de tromper la vigilance du destinataire. Les motivations courantes sont la fraude, le phishing, l’ingénierie sociale ou la diffusion de malwares. Cela fonctionne parce que le protocole d’envoi d’e-mails, dans sa forme basique, **ne vérifie pas automatiquement** que l’expéditeur est bien celui qu’il prétend être.
 
-### 🔐 Prévention (principes — non techniques)
-- **Mettre en place SPF / DKIM / DMARC** pour limiter la possibilité d’usurpation au niveau du domaine.  
-- **Exiger le chiffrement et l’authentification** pour les relais d’e-mail (STARTTLS/TLS + auth).  
-- **Former les utilisateurs** : vérifier l’adresse complète, se méfier des demandes urgentes et des pièces jointes inattendues.  
-- **Conserver des traces** (logs, exports horodatés) pour pouvoir analyser et expliquer un incident.
-
-### 🔎 Détection (principes)
-- **Surveiller les rapports DMARC** et les alertes d’envois inhabituels.  
-- **Analyser les en-têtes** des messages suspects (par un outil ou un analyste) plutôt que de se fier uniquement à l’affichage.  
-- **Garder des artefacts horodatés** pour faciliter l’investigation et l’apprentissage pédagogique.
-
-### ✅ Message clé
-Ce guide vise à **sensibiliser** et à montrer comment tester et améliorer la sécurité e-mail — **sans** donner de mode d’emploi pour mener des attaques.  
-
+---
 
 ✍️ Auteur : *Virginie Lechene*
 
