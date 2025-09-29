@@ -1,1 +1,21 @@
+name: Check DNS (SPF/DKIM/DMARC)
 
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  check-dns:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dig
+        run: sudo apt update && sudo apt install -y dnsutils
+
+      - name: Make script executable
+        run: chmod +x check_dns.sh
+
+      - name: Run DNS check (example.com)
+        run: ./check_dns.sh example.com
