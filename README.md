@@ -122,7 +122,6 @@ aiosmtpd -n -l 127.0.0.1:1025
 ---
 
 2) Envoyer un e-mail de test avec Swaks (Terminal B)
-
 Dans un autre terminal, exécutez :
 
 cd ~/projet-smtp-swaks
@@ -135,7 +134,7 @@ swaks --to test@example.com \
   | tee artifacts/test_local_aiosmtpd_$(date +%Y%m%d_%H%M%S).txt
 
 Vous obtiendrez :
-	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks);
+	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par Swaks);
 	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
 
 **Capture d’écran - envoi d’un e-mail de test avec Swaks**
