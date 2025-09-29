@@ -194,9 +194,9 @@ Ce test sert principalement à vérifier la présence et la négociation TLS.
 
 Exemples avec dig (remplacez example.com par le domaine de test) :  
 
-dig +short MX example.com  
-dig +short TXT example.com             # rechercher v=spf1
-dig +short TXT _dmarc.example.com      # enregistrement DMARC
+dig +short MX example.com    
+dig +short TXT example.com # rechercher v=spf1  
+dig +short TXT _dmarc.example.com # enregistrement DMARC  
 dig +short TXT selector._domainkey.example.com  # test DKIM (selector)
 
 Interprétez :  
