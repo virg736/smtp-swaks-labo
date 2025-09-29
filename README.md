@@ -132,7 +132,13 @@ Vous obtiendrez :
 	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks);
 	•	un fichier texte horodaté dans artifacts/ contenant la sortie (utile pour le rapport).
 
+**Capture d’écran — envoi d’un e-mail de test avec Swaks**
 
+<p align="center">
+  <img src="./swaks4.PNG" alt="Envoi d’un mail de test avec swaks" width="720"/>
+</p>
+
+*Figure : dialogue SMTP complet (EHLO, MAIL FROM, RCPT TO, DATA, QUIT).*
 
 *Figure : trace complète du dialogue SMTP (`MAIL FROM`, `RCPT TO`, `DATA`, `250 OK`) observée avec Swaks et le serveur local aiosmtpd.*
 
