@@ -303,7 +303,7 @@ dig +short TXT example.com             # rechercher v=spf1
 dig +short TXT _dmarc.example.com      # enregistrement DMARC
 dig +short TXT selector._domainkey.example.com  # test DKIM (selector)
 
-Interprétez :
+Interprétez :  
 	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.    
 	•	DMARC p=none → monitoring;    
 	p=quarantine/p=reject → enforcement.  
