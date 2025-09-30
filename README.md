@@ -270,13 +270,16 @@ Anonymisez avant publication.
 
 5) Test TLS / STARTTLS (conceptuel)
 
-Si vous souhaitez observer la négociation TLS avec un serveur externe (ex. smtp.gmail.com), utilisez :
+Si vous souhaitez observer la négociation TLS avec un serveur externe (ex. smtp.gmail.com), utilisez :    
 
-swaks --to test@example.com --from demo@lab.local \
-      --server smtp.gmail.com --port 587 --starttls --timeout 20 \
-  | tee artifacts/test_starttls_$(date +%Y%m%d_%H%M%S).txt
+swaks --to test@example.com    
+      --from demo@lab.local \    
+      --server smtp.gmail.com --port 587   
+      --starttls --timeout 20 \    
+| tee artifacts/test_starttls_$(date +%Y%m%d_%H%M%S).txt  
 
-Attention : de nombreux fournisseurs exigent une authentification pour la remise ; la connexion peut aussi être bloquée par la NAT/FAI. Ce test sert principalement à vérifier la présence et la négociation TLS.
+Attention : de nombreux fournisseurs exigent une authentification pour la remise ; la connexion peut aussi être bloquée par la NAT/FAI.  
+Ce test sert principalement à vérifier la présence et la négociation TLS.
 
 ---
 
