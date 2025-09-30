@@ -236,16 +236,16 @@ Vous obtiendrez :
 
 ---
 
-3) Interpréter le dialogue SMTP (ce qu’il faut vérifier)
+3) Interpréter le dialogue SMTP (ce qu’il faut vérifier)  
 
-Lors d’une transaction réussie, observez les étapes suivantes :
-	•	220 : salutation du serveur (prêt)
-	•	EHLO / HELO : présentation du client (capabilities)
-	•	MAIL FROM: : adresse déclarée de l’expéditeur (champ déclaratif)
-	•	RCPT TO: : destinataire déclaré
-	•	DATA → 354 : serveur attend le corps du message
-	•	. → 250 OK : message accepté
-	•	QUIT → 221 : fin de session
+Lors d’une transaction réussie, observez les étapes suivantes :  
+	•	220 : salutation du serveur (prêt)  
+	•	EHLO / HELO : présentation du client (capabilities)  
+	•	MAIL FROM: : adresse déclarée de l’expéditeur (champ déclaratif)  
+	•	RCPT TO: : destinataire déclaré  
+	•	DATA → 354 : serveur attend le corps du message  
+	•	. → 250 OK : message accepté  
+	•	QUIT → 221 : fin de session  
 
 Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM.  
 C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté destinataire.
