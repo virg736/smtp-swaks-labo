@@ -80,12 +80,12 @@ Il définit comment un client (ex. un logiciel de messagerie ou un script) commu
 
 ## Qu’est-ce que Swaks ?
 
-**Swaks** (*Swiss Army Knife for SMTP*) est un outil en ligne de commande conçu pour tester et diagnostiquer les serveurs SMTP.  
+**Swaks** (*Swiss Army Knife for SMTP*) est un outil en ligne de commande conçu pour tester et diagnostiquer des serveurs SMTP.  
 Il est particulièrement utilisé en sécurité et en administration système car il permet de :  
 - simuler l’envoi d’un e-mail avec des paramètres personnalisés,  
 - observer en détail le dialogue SMTP entre le client et le serveur,  
-- tester des mécanismes de sécurité comme **STARTTLS**, **authentification SMTP**, **SPF/DKIM/DMARC**,  
-- générer des traces exploitables dans un rapport d’audit ou de formation.  
+- tester des mécanismes de sécurité comme **STARTTLS**, **l'authentification SMTP**, **SPF/DKIM/DMARC**,  
+- générer des traces exploitables pour un rapport d’audit ou un support de formation.
 
 ---
 
