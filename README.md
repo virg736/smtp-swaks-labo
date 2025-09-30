@@ -152,8 +152,9 @@ sudo apt install -y swaks dnsutils openssl git
 </p>
 
 *Figure : sortie montrant la commande `sudo apt install swaks` (swaks déjà installé sur la VM Parrot).*
-Figure : sortie montrant la commande **sudo apt install swaks** (swaks déjà installé sur la VM Parrot).
+
 ---
+
 
 # Installer pipx puis aiosmtpd (méthode recommandée) :
 
