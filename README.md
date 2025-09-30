@@ -294,9 +294,9 @@ Ce test sert principalement à vérifier la présence et la négociation TLS.
 
 ---
 
-6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC
+6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
 
-Exemples avec dig (remplacez example.com par le domaine de test) :
+Exemples avec dig (remplacez example.com par le domaine de test) :  
 
 dig +short MX example.com
 dig +short TXT example.com             # rechercher v=spf1
@@ -304,8 +304,9 @@ dig +short TXT _dmarc.example.com      # enregistrement DMARC
 dig +short TXT selector._domainkey.example.com  # test DKIM (selector)
 
 Interprétez :
-	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.
-	•	DMARC p=none → monitoring ; p=quarantine/p=reject → enforcement.
+	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.    
+	•	DMARC p=none → monitoring;    
+	p=quarantine/p=reject → enforcement.  
 
 ---
 
