@@ -212,7 +212,7 @@ aiosmtpd -n -l 127.0.0.1:1025
 
 Dans un autre terminal, exécutez :
 
-cd ~/projet-smtp-swaks
+cd ~/projet-smtp-swaks 
 swaks --to test@example.com \
       --from demo@lab.local \
       --server 127.0.0.1 --port 1025 \
