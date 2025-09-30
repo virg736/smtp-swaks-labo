@@ -324,6 +324,23 @@ Ce test sert principalement à vérifier la présence et la négociation TLS.
   <img src="script_spoofing.PNG" alt="Exécution du script de vérification DNS" width="700">
 </p>
 
+## ✅ Description des scripts
+
+Ce projet contient deux scripts Bash permettant de vérifier les enregistrements DNS relatifs à la sécurité des emails : **SPF**, **DKIM** et **DMARC**.
+
+---
+
+### 🔹 `check_dns.sh`
+
+Ce script permet de vérifier les enregistrements **SPF / DKIM / DMARC** pour **un seul domaine**.
+
+- ✔️ Vérifie le SPF avec `dig`
+- ✔️ Vérifie DKIM avec le sélecteur `default`
+- ✔️ Vérifie le DMARC
+
+**Exemple d'utilisation :**
+```bash
+./check_dns.sh gmail.com
 ---
 
 6) ✅ Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
