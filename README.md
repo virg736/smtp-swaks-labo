@@ -310,19 +310,20 @@ Interprétez :
 
 ---
 
-7) Nettoyage
+7) Nettoyage  
 
-Si aiosmtpd a été lancé en arrière-plan, arrêtez-le :
-
-pkill -f aiosmtpd || true
+Si aiosmtpd a été lancé en arrière-plan,    
+arrêtez-le:  
+pkill -f aiosmtpd || true  
 
 ---
 
-## ⚠️ Comment un attaquant peut usurper une adresse e-mail (explication non technique)  
+## ⚠️ Comment un attaquant peut usurper une adresse e-mail (explication non technique)    
 
-Note : un futur module présentera, à des fins pédagogiques et sur un banc d’essai contrôlé, les techniques d’usurpation d’adresse e-mail et les contre-mesures associées.  
+Note : un futur module présentera, à des fins pédagogiques et sur un banc d’essai contrôlé, les techniques d’usurpation d’adresse e-mail et les contre-mesures associées.    
 
-Un attaquant cherche simplement à **faire croire** qu’un message provient d’une source de confiance (banque, collègue, service). Pour cela, il manipule les éléments visibles du message (expéditeur, objet, contenu) afin de tromper la vigilance du destinataire. Les motivations courantes sont la fraude, le phishing, l’ingénierie sociale ou la diffusion de malwares. Cela fonctionne parce que le protocole d’envoi d’e-mails, dans sa forme basique, **ne vérifie pas automatiquement** que l’expéditeur est bien celui qu’il prétend être.
+Un attaquant cherche simplement à **faire croire** qu’un message provient d’une source de confiance (banque, collègue, service). Pour cela, il manipule les éléments visibles du message (expéditeur, objet, contenu) afin de tromper la vigilance du destinataire. Les motivations courantes sont la fraude, le phishing, l’ingénierie sociale ou la diffusion de logiciels malveillants.      
+Cela fonctionne parce que le protocole d’envoi d’e-mails, dans sa forme basique, **ne vérifie pas automatiquement** que l’expéditeur est bien celui qu’il prétend être.
 
 ---
 
