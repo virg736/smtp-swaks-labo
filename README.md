@@ -186,7 +186,7 @@ Créez les dossiers :
 mkdir -p ~/projet-smtp-swaks/{docs,scripts,artifacts}    
 cd ~/projet-smtp-swaks
 
-1) Démarrer le serveur SMTP local (Terminal A)
+1) ✅ Démarrer le serveur SMTP local (Terminal A)
 
 Lancez aiosmtpd pour écouter sur l’interface locale (port 1025) :
 
@@ -236,7 +236,7 @@ Vous obtiendrez :
 
 ---
 
-3) Interpréter le dialogue SMTP (ce qu’il faut vérifier)  
+3) ✅ Interpréter le dialogue SMTP (ce qu’il faut vérifier)  
 
 Lors d’une transaction réussie, observez les étapes suivantes :  
 	•	220 : salutation du serveur (prêt)  
@@ -252,7 +252,7 @@ C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté
 
 ---
 
-4) Sauvegarder et vérifier les artefacts
+4) ✅ Sauvegarder et vérifier les artefacts
 
 Lister les artefacts :  
 
@@ -268,7 +268,7 @@ Anonymisez avant publication.
 
 ---
 
-5) Test TLS / STARTTLS (conceptuel)
+5) ✅ Test TLS / STARTTLS (conceptuel)
 
 Si vous souhaitez observer la négociation TLS avec un serveur externe (ex. smtp.gmail.com), utilisez :    
 
@@ -294,7 +294,7 @@ Ce test sert principalement à vérifier la présence et la négociation TLS.
 
 ---
 
-6) Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
+6) ✅ Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
 
 Exemples avec dig (remplacez example.com par le domaine de test) :  
 
@@ -310,10 +310,10 @@ Interprétez :
 
 ---
 
-7) Nettoyage  
+7) ✅ Nettoyage  
 
 Si aiosmtpd a été lancé en arrière-plan,    
-arrêtez-le:  
+arrêtez-le :  
 pkill -f aiosmtpd || true  
 
 ---
@@ -322,16 +322,17 @@ pkill -f aiosmtpd || true
 
 Note : un futur module présentera, à des fins pédagogiques et sur un banc d’essai contrôlé, les techniques d’usurpation d’adresse e-mail et les contre-mesures associées.    
 
-Un attaquant cherche simplement à **faire croire** qu’un message provient d’une source de confiance (banque, collègue, service). Pour cela, il manipule les éléments visibles du message (expéditeur, objet, contenu) afin de tromper la vigilance du destinataire. Les motivations courantes sont la fraude, le phishing, l’ingénierie sociale ou la diffusion de logiciels malveillants.      
+Un attaquant cherche simplement à **faire croire** qu’un message provient d’une source de confiance (banque, collègue, service). Pour cela, il manipule les éléments visibles du message (expéditeur, objet, contenu) afin de tromper la vigilance du destinataire. Les motivations courantes sont la fraude, le phishing, l’ingénierie sociale ou la diffusion de logiciels malveillants.  
+
 Cela fonctionne parce que le protocole d’envoi d’e-mails, dans sa forme basique, **ne vérifie pas automatiquement** que l’expéditeur est bien celui qu’il prétend être.
 
 ---
 
 > 🛡️ **Note de sécurité :**  
-> Pour protéger efficacement une adresse e-mail et éviter l’usurpation (spoofing), il est essentiel de configurer les mécanismes suivants au niveau de votre domaine :  
-> - **SPF** : définit quels serveurs sont autorisés à envoyer des e-mails pour votre domaine.  
-> - **DKIM** : ajoute une signature numérique aux messages pour garantir leur intégrité et leur authenticité.  
-> - **DMARC** : combine SPF et DKIM et indique aux serveurs destinataires comment traiter les messages non conformes (surveillance, quarantaine ou rejet).  
+> Pour protéger efficacement une adresse e-mail et éviter l’usurpation (spoofing), il est essentiel de configurer les mécanismes suivants au niveau de votre domaine :    
+> - **SPF** : définit quels serveurs sont autorisés à envoyer des e-mails pour votre domaine.    
+> - **DKIM** : ajoute une signature numérique aux messages pour garantir leur intégrité et leur authenticité.    
+> - **DMARC** : combine SPF et DKIM et indique aux serveurs destinataires comment traiter les messages non conformes (surveillance, quarantaine ou rejet).    
 
 ---
 
@@ -342,6 +343,8 @@ Cela fonctionne parce que le protocole d’envoi d’e-mails, dans sa forme basi
 ## Licence
 Le script est publié sous la licence MIT.
 
+---
+
 ## À propos de l’usage
 Ce projet est destiné exclusivement à des fins pédagogiques, notamment dans le cadre de :
 - d’une formation en cybersécurité,
@@ -350,6 +353,8 @@ Ce projet est destiné exclusivement à des fins pédagogiques, notamment dans l
 
 ⚠️ L’auteure ne cautionne ni n’autorise l’utilisation de ce script en dehors d’un cadre légal strictement défini.
 Toute utilisation non conforme est interdite et relève uniquement de la responsabilité de l’utilisateur.
+
+---
 
 ## Droits sur les visuels
 Les visuels, illustrations ou captures présents dans ce dépôt sont la propriété exclusive de l’auteure.
