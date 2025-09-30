@@ -223,8 +223,8 @@ swaks --to test@example.com \
   | tee artifacts/test_local_aiosmtpd_$(date +%Y%m%d_%H%M%S).txt
 
 Vous obtiendrez :
-	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks).
-	•	un fichier texte horodaté dans artifacts/ contenant cette sortie (utile pour le rapport).
+	•	la trace complète de la transaction SMTP dans la sortie standard (affichée par swaks).  
+	•	un fichier texte horodaté dans artifacts/ contenant cette sortie (utile pour le rapport).  
 
 ** ✅ Capture d’écran - envoi d’un e-mail de test avec Swaks**
 
@@ -247,7 +247,8 @@ Lors d’une transaction réussie, observez les étapes suivantes :
 	•	. → 250 OK : message accepté
 	•	QUIT → 221 : fin de session
 
-Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM. C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté destinataire.
+Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM.  
+C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté destinataire.
 
 ---
 
