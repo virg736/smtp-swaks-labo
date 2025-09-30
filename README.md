@@ -125,13 +125,13 @@ Il est particulièrement utilisé en sécurité et en administration système ca
 
 # Démo SMTP - Swaks + aiosmtpd (guide pas à pas)
 
-> Tout se fait **en local** sur une VM Parrot OS ou dans un laboratoire isolé. N’exécutez jamais ces procédures sur des systèmes tiers sans autorisation écrite.
+> Tout se fait **en local** sur une VM Parrot OS ou dans un laboratoire isolé. N’exécutez jamais ces procédures sur des systèmes tiers sans autorisation écrite préalable.
 
 ## Objectifs
 Montrer comment:
--  créer un serveur SMTP local (aiosmtpd) pour capter des messages de test ;
+-  créer un serveur SMTP local (aiosmtpd) pour capter des messages de test.
 -  envoyer des e-mails de test avec `swaks` ;
--  observer et interpréter le dialogue SMTP (client ↔ serveur) ;
+-  observer et interpréter le dialogue SMTP (client ↔ serveur).
 -  sauvegarder des artefacts (traces) exploitables pour un rapport pédagogique.
 
 ---
