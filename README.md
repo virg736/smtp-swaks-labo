@@ -58,6 +58,32 @@ Test SMTP pédagogique avec **swaks** (guide & labo)
 ---
 
 
+## 📑 Sommaire
+
+1. [Objectifs pédagogiques](#objectifs-pédagogiques)  
+2. [Prérequis](#prérequis-vm-parrot-os--système-de-type-debian)  
+3. [Installation](#installation)  
+   - [pipx + aiosmtpd](#installer-pipx-puis-aiosmtpd-méthode-recommandée)  
+   - [Création des dossiers](#créez-les-dossiers)  
+4. [Démo SMTP](#démo-smtp---swaks--aiosmtpd-guide-pas-à-pas)  
+   - [Démarrer le serveur SMTP](#1-démarrer-le-serveur-smtp-local-terminal-a)  
+   - [Envoyer un e-mail de test](#2-envoyer-un-e-mail-de-test-avec-swaks-terminal-b)  
+   - [Interpréter le dialogue SMTP](#3-interpréter-le-dialogue-smtp-ce-quil-faut-vérifier)  
+   - [Sauvegarder les artefacts](#4-sauvegarder-et-vérifier-les-artefacts)  
+   - [Test TLS / STARTTLS](#5-test-tls--starttls-conceptuel)  
+5. [Vérification DNS](#6-vérification-dns-lecture-seule---spf--dkim--dmarc)  
+6. [Nettoyage](#7-nettoyage)  
+7. [Note de sécurité](#️-note-de-sécurité)  
+8. [Test du script](#test-du-script)  
+9. [Auteur & Licence](#auteur)  
+   - [Licence](#licence)  
+   - [Usage](#à-propos-de-lusage)  
+   - [Droits sur les visuels](#droits-sur-les-visuels)
+
+
+---
+
+
 ## Résumé
 Ce projet montre comment :
 - créer un **serveur SMTP local** (simulation avec `aiosmtpd`),  
