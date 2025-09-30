@@ -192,7 +192,7 @@ Lancez aiosmtpd pour écouter sur l’interface locale (port 1025) :
 
 aiosmtpd -n -l 127.0.0.1:1025
 
-•	-n : ne pas daemoniser (le serveur reste au premier plan et affiche les messages reçus).
+•	-n : ne pas daemoniser (le serveur reste au premier plan et affiche les messages reçus).  
 •	Laissez ce terminal ouvert : il affichera les messages au format brut (en-têtes + corps).
 
 
