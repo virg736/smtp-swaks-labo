@@ -58,6 +58,12 @@ Test SMTP pédagogique avec **swaks** (guide & labo)
 ---
 
 
+## 📌 Introduction
+
+Un guide pédagogique pour comprendre **SMTP**, ses vulnérabilités (*spoofing*) et les protections (**SPF, DKIM, DMARC, TLS**) à travers un laboratoire pratique basé sur **Swaks** et **aiosmtpd**.
+
+---
+
 ## 📑 Sommaire
 
 1. [Objectifs pédagogiques](#objectifs-pédagogiques)  
