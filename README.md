@@ -130,7 +130,7 @@ Il est particulièrement utilisé en sécurité et en administration système ca
 ## Objectifs
 Montrer comment:
 -  créer un serveur SMTP local (aiosmtpd) pour capter des messages de test.
--  envoyer des e-mails de test avec `swaks` ;
+-  envoyer des e-mails de test avec `swaks`.
 -  observer et interpréter le dialogue SMTP (client ↔ serveur).
 -  sauvegarder des artefacts (traces) exploitables pour un rapport pédagogique.
 
