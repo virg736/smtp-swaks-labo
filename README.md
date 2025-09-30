@@ -98,16 +98,16 @@ Il est particulièrement utilisé en sécurité et en administration système ca
 
 ## Objectifs pédagogiques
 - Comprendre le dialogue SMTP (EHLO/HELO, MAIL FROM, RCPT TO, DATA).  
-- Illustrer pourquoi SMTP par défaut permet, l'usurpation d'expéditeur (spoofing).  
+- Illustrer pourquoi SMTP, par défaut,permetl'usurpation d'expéditeur (spoofing).  
 - Vérifier et interpréter SPF / DKIM / DMARC et STARTTLS/TLS.  
 - Produire des artefacts (sorties swaks, logs) exploitables en audit pédagogique.
 
 ## ✅ Contenu du dépôt (extrait)
 - `README.md` - introduction (ce fichier).  
-- `docs/demo_smtp_swaks.md` - guide pas-à-pas (installation, création serveur local, tests).  
-- `docs/protections_email.md` - explication SPF/DKIM/DMARC/TLS et recommandations.  
+- `docs/demo_smtp_swaks.md` - guide pas à pas (installation, création serveur local, tests).  
+- `docs/protections_email.md` - explications SPF/DKIM/DMARC/TLS et recommandations.  
 - `ROE_MINI.md` - modèle minimal Rules of Engagement (lecture obligatoire).  
-- `scripts/run_demo.sh` - script safe (local only) : démarre serveur local, lance swaks, sauvegarde traces.  
+- `scripts/run_demo.sh` - script safe (local only) : démarre le serveur local, lance swaks, sauvegarde traces.  
 - `artifacts/` - sorties de tests (texte).  
 
 ## Règles d'or (lecture obligatoire)
