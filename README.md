@@ -328,22 +328,19 @@ Ce test sert principalement à vérifier la présence et la négociation TLS.
 
 Ce projet contient deux scripts Bash permettant de vérifier les enregistrements DNS relatifs à la sécurité des emails : **SPF**, **DKIM** et **DMARC**.
 
-### 🔹 `check_dns.sh`  
+🔹 Script : `check_dns.sh`  
 
 Ce script permet de vérifier les enregistrements **SPF / DKIM / DMARC** pour **un seul domaine**.  
 
-**Exemple d'utilisation :**  
-./check_dns.sh gmail.com  
+**Exemple d'utilisation :**    
+./check_dns.sh gmail.com    
 
+🔹 Script : `check_dns_multi.sh`  
 
-## 🔹 Script : `check_dns_multi.sh`
+Ce script Bash permet de **vérifier les enregistrements DNS SPF, DKIM, et DMARC** pour **plusieurs domaines**.  
 
-Ce script Bash permet de **vérifier les enregistrements DNS SPF, DKIM, et DMARC** pour **plusieurs domaines à la fois**, tout en testant **plusieurs sélecteurs DKIM** en une seule exécution.
-
-
-## Exemple d’utilisation
-
-./check_dns_multi.sh gmail.com yahoo.com outlook.com
+## Exemple d’utilisation  
+./check_dns_multi.sh gmail.com yahoo.com outlook.com  
 
 ---
 
