@@ -339,6 +339,29 @@ Ce script permet de vérifier les enregistrements **SPF / DKIM / DMARC** pour **
 **Exemple d'utilisation :**  
 ./check_dns.sh gmail.com  
 
+
+## 🔄 Script : `check_dns_multi.sh`
+
+Ce script Bash permet de **vérifier les enregistrements DNS SPF, DKIM, et DMARC** pour **plusieurs domaines à la fois**, tout en testant **plusieurs sélecteurs DKIM** en une seule exécution.
+
+
+
+### ⚙️ Fonctionnalités
+
+- ✔️ Lecture automatique des enregistrements :
+  - **SPF** via `dig`
+  - **DKIM** via plusieurs sélecteurs (_default, selector1, mail, google, dkim_)
+  - **DMARC** via l’entrée `_dmarc.<domaine>`
+- ✔️ Prise en charge de **plusieurs domaines** en un seul appel
+- ✔️ Vérification et affichage clair des résultats
+- ✔️ Affichage des absences de clés DKIM par sélecteur
+
+
+
+### 🧪 Exemple d’utilisation
+
+./check_dns_multi.sh gmail.com yahoo.com outlook.com
+
 ---
 
 6) ✅ Vérification DNS (lecture seule) - SPF / DKIM / DMARC  
