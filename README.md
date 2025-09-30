@@ -241,10 +241,10 @@ Vous obtiendrez :
 Lors d’une transaction réussie, observez les étapes suivantes :  
 	•	220 : salutation du serveur (prêt)  
 	•	EHLO / HELO : présentation du client (capabilities)  
-	•	MAIL FROM: : adresse déclarée de l’expéditeur (champ déclaratif)  
-	•	RCPT TO: : destinataire déclaré  
+	•	MAIL FROM:  adresse déclarée de l’expéditeur (champ déclaratif)  
+	•	RCPT TO:  destinataire déclaré  
 	•	DATA → 354 : serveur attend le corps du message  
-	•	. → 250 OK : message accepté  
+	•   → 250 OK : message accepté  
 	•	QUIT → 221 : fin de session  
 
 Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM.  
@@ -254,15 +254,17 @@ C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté
 
 4) Sauvegarder et vérifier les artefacts
 
-Lister les artefacts :
+Lister les artefacts :  
 
-ls -lh artifacts/
+ls -lh artifacts/  
 
-Afficher le contenu d’un artefact :
+Afficher le contenu d’un artefact :  
 
-less artifacts/test_local_aiosmtpd_*.txt
+less artifacts/test_local_aiosmtpd_*.txt  
 
-Conservez ces fichiers dans le dépôt (ou hors dépôt si sensibles) pour preuve et reporting. Anonymisez avant publication.
+Conservez ces fichiers dans le dépôt (ou hors dépôt si sensibles) pour preuve et reporting.    
+
+Anonymisez avant publication.
 
 ---
 
