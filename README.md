@@ -37,7 +37,7 @@ Reproduction interdite sans autorisation préalable. Usage pédagogique uniqueme
 ---
 
 <h1 align="center" style="font-size:50px; font-weight:bold;">
-📧 Du spoofing à la sécurité e-mail
+📧 Du spoofing à la sécurité des e-mails
 </h1>
 
 
