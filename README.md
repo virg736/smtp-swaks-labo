@@ -24,11 +24,8 @@
 
 <!-- Texte copyright et usage (centré) -->
 <p align="center">
-© 2025 Virginie Lechene - Tous droits réservés<br>
-Reproduction interdite sans autorisation préalable. Usage pédagogique uniquement.
+© 2025 Virginie Lechene
 </p>
-
-<p align="center"><em>Image protégée - Propriété exclusive</em></p>
 
 <p align="center">
   <img src="https://licensebuttons.net/l/by-nd/3.0/88x31.png" alt="Creative Commons BY-ND">
@@ -404,10 +401,12 @@ Toute utilisation non conforme est interdite et relève uniquement de la respons
 
 ---
 
-## Droits sur les visuels
-Les visuels, illustrations ou captures présents dans ce dépôt sont la propriété exclusive de l’auteure.
-Toute reproduction ou utilisation non autorisée est interdite.
+## 📷 Droits sur les visuels
 
+Les visuels de ce dépôt sont protégés par la licence CC BY-ND 4.0.
+Attribution obligatoire – Modification interdite.
+
+© 2026 Virginie Lechene
 
 
 
