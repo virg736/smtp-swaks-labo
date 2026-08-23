@@ -42,9 +42,9 @@
 
 # 📧 Du spoofing à la sécurité des e-mails
 
-**Laboratoire SMTP pédagogique avec Swaks — analyse du protocole, spoofing et protections e-mail**
+**Laboratoire SMTP pédagogique avec Swaks - analyse du protocole, spoofing et protections e-mail**
 
-**Niveau : intermédiaire — cybersécurité / sécurité réseau / sécurité e-mail**
+**Niveau : intermédiaire - cybersécurité / sécurité réseau / sécurité e-mail**
 
 > ⚠️ **Usage pédagogique uniquement**
 >
