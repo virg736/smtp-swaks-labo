@@ -392,14 +392,12 @@ Ce projet contient deux scripts Bash permettant de vérifier les enregistrements
 
 🔹 Script : `check_dns.sh`  
 
-Ce script permet de vérifier les enregistrements **SPF / DKIM / DMARC** pour **un seul domaine**.  
-    
+Ce script permet de vérifier les enregistrements SPF et DMARC pour un seul domaine, ainsi que DKIM si un sélecteur DKIM est fourni ou connu.
 ./check_dns.sh  gmail.com      
 
 🔹 Script : `check_dns_multi.sh`  
 
-Ce script Bash permet de **vérifier les enregistrements DNS SPF, DKIM, et DMARC** pour **plusieurs domaines**.  
-
+Ce script permet de vérifier les enregistrements SPF et DMARC pour plusieurs domaines, ainsi que DKIM si un sélecteur DKIM est fourni ou connu.
 ./check_dns_multi.sh  gmail.com  yahoo.com  outlook.com  
 
 ---
