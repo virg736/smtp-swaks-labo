@@ -456,14 +456,21 @@ Le script est publié sous la licence MIT.
 
 ---
 
-## À propos de l’usage
-Ce projet est destiné exclusivement à des fins pédagogiques, notamment dans le cadre de :
-- d’une formation en cybersécurité,
-- de tests d’intrusion légaux (pentest),
-- d’analyses réseau dans un environnement contrôlé.
+## Licence
 
-⚠️ L’auteure ne cautionne ni n’autorise l’utilisation de ce script en dehors d’un cadre légal strictement défini.
-Toute utilisation non conforme est interdite et relève uniquement de la responsabilité de l’utilisateur.
+Le code de ce projet est publié sous la licence MIT.
+
+## À propos de l’usage
+
+Ce projet a été conçu principalement à des fins pédagogiques, notamment pour :
+
+- la formation en cybersécurité ;
+- les laboratoires et exercices de sécurité autorisés ;
+- l’analyse réseau dans un environnement contrôlé.
+
+⚠️ Les exemples et procédures de sécurité présentés dans ce dépôt doivent être utilisés uniquement sur des systèmes que vous possédez ou pour lesquels vous disposez d’une autorisation explicite.
+
+L’utilisateur reste responsable du respect des lois, des politiques applicables et des Rules of Engagement de son environnement.
 
 ---
 
