@@ -256,31 +256,35 @@ pipx install aiosmtpd
 **Figure :** sortie montrant la commande `pipx install aiosmtpd` et le message de succès  
 (aiosmtpd installé et disponible localement).
 
-**Remarque :** si `pipx` n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python :  
+### Installation alternative avec un environnement virtuel Python
 
-python3 -m venv .venv  
-source .venv/bin/activate  
-pip install --upgrade pip  
-pip install aiosmtpd  
+> **Remarque :** si `pipx` n’est pas souhaité, vous pouvez utiliser un environnement virtuel Python.
 
-Créez les dossiers :
+python3 -m venv .venv   
+source .venv/bin/activate   
+pip install --upgrade pip   
+pip install aiosmtpd   
 
-mkdir -p ~/projet-smtp-swaks/{docs,scripts,artifacts}    
-cd ~/projet-smtp-swaks
+Création des dossiers du projet
+ 
+mkdir -p ~/projet-smtp-swaks/{docs,scripts,artifacts}   
+cd ~/projet-smtp-swaks   
 
-1) ✅ Démarrer le serveur SMTP local (Terminal A)
+1. ✅ Démarrer le serveur SMTP local (Terminal A)   
 
-Lancez aiosmtpd pour écouter sur l’interface locale (port 1025) :
+Lancez aiosmtpd pour écouter uniquement sur l’interface locale, sur le port 1025 :   
 
-aiosmtpd -n -l 127.0.0.1:1025
+aiosmtpd -n -l 127.0.0.1:1025   
 
-•	-n : ne pas daemoniser (le serveur reste au premier plan et affiche les messages reçus).  
-•	Laissez ce terminal ouvert : il affichera les messages au format brut (en-têtes + corps).
+* -n : exécute le serveur au premier plan.   
+* -l 127.0.0.1:1025 : limite l’écoute à l’interface locale sur le port 1025.   
+* Laissez ce terminal ouvert : il affichera les messages reçus au format brut, avec leurs en-têtes et leur contenu.   
 
+Figure : sortie montrant l’installation de aiosmtpd avec pipx.   
 
-*Figure : sortie montrant la commande `pipx install aiosmtpd` suivie de `pipx ensurepath`.*
+✅ Capture d’écran — ajout au PATH et rechargement du shell
 
-** ✅ Capture d’écran - ajout au PATH et rechargement du shell**
+Figure : utilisation de pipx ensurepath puis rechargement du shell avec source ~/.bashrc.
 
 <p align="center">
   <img src="./swaks3.PNG" alt="Ajout PATH et rechargement shell" width="720"/>
