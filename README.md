@@ -139,20 +139,25 @@ Il définit comment un client, par exemple un logiciel de messagerie ou un scrip
 
 ---
 
-## Qu’est-ce que Swaks ?
+## Qu'est-ce que Swaks ?
 
-**Swaks** (*Swiss Army Knife for SMTP*) est un outil en ligne de commande conçu pour tester et diagnostiquer des serveurs SMTP.  
-Il est particulièrement utilisé en sécurité et en administration système car il permet de :  
-- simuler l’envoi d’un e-mail avec des paramètres personnalisés,  
-- observer en détail le dialogue SMTP entre le client et le serveur,  
-- tester des mécanismes de sécurité comme **STARTTLS**, **l'authentification SMTP**, **SPF/DKIM/DMARC**,  
+**Swaks (Swiss Army Knife for SMTP)** est un outil en ligne de commande conçu pour tester et diagnostiquer des serveurs SMTP.
+
+Il est particulièrement utile en sécurité et en administration système car il permet de :
+
+- simuler l’envoi d’un e-mail avec des paramètres personnalisés ;
+- observer en détail le dialogue SMTP entre le client et le serveur ;
+- tester des mécanismes liés à la sécurité SMTP, comme **STARTTLS** et l’**authentification SMTP** ;
+- vérifier, en complément, les enregistrements **SPF, DKIM et DMARC** via les outils DNS adaptés ;
 - générer des traces exploitables pour un rapport d’audit ou un support de formation.
 
 ---
 
-- **SPF** (Sender Policy Framework) : permet au propriétaire d’un domaine de définir quels serveurs sont autorisés à envoyer des e-mails en son nom.  
-- **DKIM** (DomainKeys Identified Mail) : ajoute une signature cryptographique aux e-mails pour garantir que le message n’a pas été modifié et qu’il provient bien du domaine revendiqué.  
-- **DMARC** (Domain-based Message Authentication, Reporting and Conformance) : combine SPF et DKIM, et précise aux serveurs destinataires comment traiter les e-mails qui échouent aux vérifications (surveillance, quarantaine ou rejet).  
+- **SPF (Sender Policy Framework)** : permet au propriétaire d’un domaine de définir quels serveurs sont autorisés à envoyer des e-mails en son nom.
+
+- **DKIM (DomainKeys Identified Mail)** : ajoute une signature cryptographique permettant de vérifier l’intégrité du message et d’authentifier le domaine ayant apposé la signature.
+
+- **DMARC (Domain-based Message Authentication, Reporting and Conformance)** : s’appuie sur **SPF et/ou DKIM** et vérifie leur alignement avec le domaine visible dans l’adresse d’expéditeur. Il permet également au propriétaire du domaine d’indiquer aux serveurs destinataires comment traiter les messages qui échouent aux vérifications : surveillance, mise en quarantaine ou rejet.
 
 ---
 
