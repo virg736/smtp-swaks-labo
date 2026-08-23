@@ -40,26 +40,52 @@
 
 ---
 
-Test SMTP pédagogique avec **swaks** (guide & labo)
+# 📧 Du spoofing à la sécurité des e-mails
 
-**Niveau :** pentester / ingénierie sécurité (pédagogique, contrôlé)  
+**Laboratoire SMTP pédagogique avec Swaks — analyse du protocole, spoofing et protections e-mail**
 
-⚠️ **Usage pédagogique uniquement** - Tous les tests décrits ici sont réalisés en local dans une VM Parrot OS ou dans un laboratoire isolé. Avant toute action sur des systèmes réels, **obtenez une autorisation écrite** (Rules of Engagement).
+**Niveau : intermédiaire — cybersécurité / sécurité réseau / sécurité e-mail**
 
-## Pré-requis minimum (résumé)
-
-- Solides connaissances Linux & réseau (TCP/IP, DNS, SMTP).  
-- Maîtrise de la ligne de commande et des outils réseau (`swaks`, `dig`, `openssl`).  
-- Connaissances pratiques de `SPF` / `DKIM` / `DMARC` et `STARTTLS` / `TLS`.
+> ⚠️ **Usage pédagogique uniquement**
+>
+> Tous les tests décrits dans ce projet sont réalisés en local, dans une VM Parrot OS ou dans un laboratoire isolé.
+>
+> Toute intervention sur un système tiers ou réel nécessite une **autorisation explicite préalable** (Rules of Engagement).
 
 ---
 
+## Pré-requis minimum
+
+- Connaissances Linux et réseau : **TCP/IP, DNS, SMTP**
+- Maîtrise de la ligne de commande et des outils `swaks`, `dig` et `openssl`
+- Connaissances des mécanismes **SPF, DKIM, DMARC** et **STARTTLS/TLS**
+
+---
 
 ## 📌 Introduction
 
-Un guide pédagogique pour comprendre **SMTP**, ses vulnérabilités (*spoofing*) et les protections (**SPF, DKIM, DMARC, TLS**) à travers un laboratoire pratique basé sur **Swaks** et **aiosmtpd**.
+Ce projet propose un laboratoire pratique consacré au fonctionnement et à la sécurité du protocole **SMTP**.
 
----
+Il permet d'étudier :
+
+- le dialogue entre un client et un serveur SMTP ;
+- les commandes fondamentales du protocole ;
+- les risques d'usurpation de l'identité d'un expéditeur (**e-mail spoofing**) ;
+- le rôle de **SPF**, **DKIM** et **DMARC** dans l'authentification des domaines et la politique de traitement des messages ;
+- le rôle de **STARTTLS/TLS** dans la protection du transport des communications SMTP.
+
+Le laboratoire utilise **Swaks** pour générer et observer des transactions SMTP et **aiosmtpd** pour mettre en place un serveur SMTP local contrôlé.
+
+L'objectif est de passer de la théorie à la pratique en observant directement les échanges SMTP, en analysant les mécanismes de sécurité associés et en conservant des traces exploitables dans le cadre d'un rapport pédagogique.
+
+> 🔐 **À retenir**
+>
+> **SPF, DKIM et DMARC** participent à l'authentification et aux politiques de sécurité liées aux domaines e-mail.
+>
+> **STARTTLS/TLS** protège principalement le transport des communications SMTP.
+>
+> Ces mécanismes sont complémentaires, mais remplissent des fonctions différentes.
+
 
 ## 📑 Sommaire
 
