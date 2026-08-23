@@ -240,12 +240,12 @@ sudo apt install -y swaks dnsutils openssl git
 
 # Installer pipx puis aiosmtpd (méthode recommandée) :
 
-sudo apt install -y pipx
-pipx ensurepath
-# relancer le shell si nécessaire :
-   source ~/.bashrc
+sudo apt install -y pipx   
+pipx ensurepath   
+# relancer le shell si nécessaire :   
+   source ~/.bashrc.  
   
-pipx install aiosmtpd
+pipx install aiosmtpd   
 
 ### ✅ Capture d'écran - installation de `aiosmtpd` avec pipx
 
