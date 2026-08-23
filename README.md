@@ -335,8 +335,7 @@ Lors d’une transaction réussie, observez les étapes suivantes :
 	•   → 250 OK : message accepté  
 	•	QUIT → 221 : fin de session  
 
-Remarque pédagogique : SMTP de base n’authentifie pas le champ MAIL FROM.  
-C’est pourquoi SPF/DKIM/DMARC et l’authentification sont nécessaires côté destinataire.
+Remarque pédagogique : SMTP de base n’authentifie pas à lui seul l’identité déclarée dans MAIL FROM. Des mécanismes complémentaires comme SPF, DKIM et DMARC permettent aux serveurs destinataires d’évaluer l’authenticité et la légitimité des messages reçus.
 
 ---
 
