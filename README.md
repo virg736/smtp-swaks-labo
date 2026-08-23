@@ -161,12 +161,14 @@ Il est particulièrement utile en sécurité et en administration système car i
 
 ---
 
-## Objectifs pédagogiques
+## Objectifs
 
-- Comprendre le dialogue SMTP (**EHLO/HELO, MAIL FROM, RCPT TO, DATA**).
-- Comprendre pourquoi le protocole SMTP, utilisé seul, ne garantit pas l’authenticité de l’expéditeur et peut permettre l’usurpation d’adresse e-mail (**spoofing**).
-- Vérifier et interpréter les mécanismes de sécurité **SPF, DKIM, DMARC et STARTTLS/TLS**.
-- Produire des artefacts (**sorties Swaks, logs**) exploitables dans le cadre d’un audit pédagogique.
+Montrer comment :
+
+- créer un **serveur SMTP local** avec `aiosmtpd` afin de capturer des messages de test ;
+- envoyer des e-mails de test avec `swaks` ;
+- observer et interpréter le dialogue SMTP entre le client et le serveur ;
+- sauvegarder des artefacts et des traces exploitables dans le cadre d’un rapport pédagogique.
 
 ---
 
