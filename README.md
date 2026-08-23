@@ -112,24 +112,30 @@ L'objectif est de passer de la théorie à la pratique en observant directement 
 
 ---
 
-
 ## Résumé
+
 Ce projet montre comment :
-- créer un **serveur SMTP local** (simulation avec `aiosmtpd`),  
-- tester l’envoi d’e-mails avec `swaks`,  
-- observer le **dialogue SMTP** côté client/serveur,  
-- vérifier et interpréter les protections e-mail : **SPF, DKIM, DMARC, TLS**.
 
+- créer un **serveur SMTP local** avec `aiosmtpd` ;
+- tester l’envoi d’e-mails avec `swaks` ;
+- observer le **dialogue SMTP** entre le client et le serveur ;
+- vérifier et interpréter les mécanismes de sécurité e-mail : **SPF, DKIM, DMARC et TLS**.
 
-## Qu’est-ce que SMTP ?
+---
 
-**SMTP** (*Simple Mail Transfer Protocol*) est le protocole standard utilisé pour l’envoi de courriels sur Internet.  
-Il définit comment un client (ex. un logiciel de messagerie ou un script) communique avec un serveur de messagerie pour transmettre un message électronique.  
+## Qu'est-ce que SMTP ?
 
-✅ Points essentiels :  
-- SMTP fonctionne en mode texte : les échanges se font sous forme de commandes et de réponses lisibles.  
-- Par défaut, SMTP ne vérifie pas l’authenticité de l’expéditeur → c’est pourquoi il est vulnérable au **spoofing** (usurpation d’adresse e-mail).  
-- Pour sécuriser les échanges, on ajoute des mécanismes comme **STARTTLS/TLS**, **SPF**, **DKIM** et **DMARC**.
+**SMTP (Simple Mail Transfer Protocol)** est le protocole standard utilisé pour l’envoi de courriels sur Internet.
+
+Il définit comment un client, par exemple un logiciel de messagerie ou un script, communique avec un serveur de messagerie pour transmettre un message électronique.
+
+### ✅ Points essentiels
+
+- SMTP fonctionne en mode texte : les échanges se font sous forme de commandes et de réponses lisibles.
+- Par défaut, SMTP ne vérifie pas à lui seul que l’expéditeur est bien celui qu’il prétend être, ce qui explique les risques d’**e-mail spoofing**.
+- Pour renforcer la sécurité des e-mails, on utilise notamment **STARTTLS/TLS, SPF, DKIM et DMARC**.
+- **STARTTLS/TLS** protège principalement le transport des communications SMTP.
+- **SPF, DKIM et DMARC** participent à l’authentification des domaines et aux politiques de traitement des messages.
 
 ---
 
