@@ -24,7 +24,7 @@
 
 <!-- Texte copyright et usage (centré) -->
 <p align="center">
-© 2025 Virginie Lechene
+© 2026 Virginie Lechene
 </p>
 
 <p align="center">
@@ -393,11 +393,13 @@ Ce projet contient deux scripts Bash permettant de vérifier les enregistrements
 🔹 Script : `check_dns.sh`  
 
 Ce script permet de vérifier les enregistrements SPF et DMARC pour un seul domaine, ainsi que DKIM si un sélecteur DKIM est fourni ou connu.
+
 ./check_dns.sh  gmail.com      
 
 🔹 Script : `check_dns_multi.sh`  
 
 Ce script permet de vérifier les enregistrements SPF et DMARC pour plusieurs domaines, ainsi que DKIM si un sélecteur DKIM est fourni ou connu.
+
 ./check_dns_multi.sh  gmail.com  yahoo.com  outlook.com  
 
 ---
@@ -411,10 +413,11 @@ dig +short TXT example.com             # rechercher v=spf1
 dig +short TXT _dmarc.example.com      # enregistrement DMARC  
 dig +short TXT selector._domainkey.example.com  # test DKIM (selector)  
 
-Interprétez :  
-	•	Absence de SPF/DKIM/DMARC → domaine vulnérable au spoofing.    
-	•	DMARC p=none → monitoring;    
-	p=quarantine/p=reject → enforcement.  
+Interprétez :   
+
+- Absence de SPF, DKIM ou DMARC → protection de l’authentification des e-mails incomplète ; analyser les mécanismes présents avant de conclure.   
+- DMARC `p=none` → politique de surveillance (monitoring).   
+- DMARC `p=quarantine` ou `p=reject` → politique d’application plus restrictive.   
 
 ---
 
