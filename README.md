@@ -219,23 +219,21 @@ Montrer comment :
 
 ---
 
-
 ## Prérequis (VM Parrot OS / système de type Debian)
 
-- Système à jour :  
-sudo apt update && sudo apt upgrade -y
+- Mettre le système à jour :   
 
--  Installer les outils de base :  
-sudo apt install -y swaks dnsutils openssl git
+sudo apt update && sudo apt upgrade -y   
 
-## ✅ Installation - capture
-**Capture d'écran - installation de `swaks`**
+* Installer les outils nécessaires :
+
+sudo apt install -y swaks dnsutils openssl git   
 
 <p align="center">
   <img src="swaks1.PNG" alt="Installation de swaks sur Parrot OS" width="720">
 </p>
 
-*Figure : sortie montrant la commande `sudo apt install swaks` (swaks déjà installé sur la VM Parrot).*
+*Figure : sortie de la commande sudo apt install swaks montrant que Swaks est déjà installé sur la VM Parrot OS).*
 
 ---
 
