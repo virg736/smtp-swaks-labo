@@ -435,7 +435,7 @@ Note : un futur module présentera, à des fins pédagogiques et sur un banc d�
 
 Un attaquant cherche simplement à **faire croire** qu’un message provient d’une source de confiance (banque, collègue, service). Pour cela, il manipule les éléments visibles du message (expéditeur, objet, contenu) afin de tromper la vigilance du destinataire. Les motivations courantes sont la fraude, le phishing, l’ingénierie sociale ou la diffusion de logiciels malveillants.  
 
-Cela fonctionne parce que le protocole d’envoi d’e-mails, dans sa forme basique, **ne vérifie pas automatiquement** que l’expéditeur est bien celui qu’il prétend être.
+« Cela est possible parce que SMTP, utilisé seul, ne garantit pas l’identité de l’expéditeur déclarée dans le message. Des mécanismes complémentaires comme SPF, DKIM et DMARC sont utilisés pour renforcer la vérification de l’origine et de l’authenticité des messages. »
 
 ---
 
