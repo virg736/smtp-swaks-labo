@@ -161,25 +161,33 @@ Il est particulièrement utile en sécurité et en administration système car i
 
 ---
 
-
 ## Objectifs pédagogiques
-- Comprendre le dialogue SMTP (EHLO/HELO, MAIL FROM, RCPT TO, DATA).  
-- Illustrer pourquoi SMTP, par défaut,permet l'usurpation d'expéditeur (spoofing).  
-- Vérifier et interpréter SPF / DKIM / DMARC et STARTTLS/TLS.  
-- Produire des artefacts (sorties swaks, logs) exploitables en audit pédagogique.
+
+- Comprendre le dialogue SMTP (**EHLO/HELO, MAIL FROM, RCPT TO, DATA**).
+- Comprendre pourquoi le protocole SMTP, utilisé seul, ne garantit pas l’authenticité de l’expéditeur et peut permettre l’usurpation d’adresse e-mail (**spoofing**).
+- Vérifier et interpréter les mécanismes de sécurité **SPF, DKIM, DMARC et STARTTLS/TLS**.
+- Produire des artefacts (**sorties Swaks, logs**) exploitables dans le cadre d’un audit pédagogique.
+
+---
 
 ## ✅ Contenu du dépôt (extrait)
-- `README.md` - introduction (ce fichier).  
-- `docs/demo_smtp_swaks.md` - guide pas à pas (installation, création serveur local, tests).  
-- `docs/protections_email.md` - explications SPF/DKIM/DMARC/TLS et recommandations.  
-- `ROE_MINI.md` - modèle minimal Rules of Engagement (lecture obligatoire).  
-- `scripts/run_demo.sh` - script safe (local only) : démarre le serveur local, lance swaks, sauvegarde les traces.  
-- `artifacts/` - sorties de tests (texte).  
+
+- `README.md` — introduction (ce fichier).
+- `docs/demo_smtp_swaks.md` — guide pas à pas : installation, création d’un serveur SMTP local et tests.
+- `docs/protections_email.md` — explications sur SPF, DKIM, DMARC et TLS, accompagnées de recommandations.
+- `ROE_MINI.md` — modèle minimal de Rules of Engagement (lecture obligatoire).
+- `scripts/run_demo.sh` — script de démonstration en environnement local : démarre le serveur SMTP local, lance Swaks et sauvegarde les traces.
+- `artifacts/` — sorties et traces des tests.
+
+---
 
 ## Règles d'or (lecture obligatoire)
-- N'exécutez jamais ces scripts sur des hôtes tiers ou en production sans autorisation explicite.  
-- Utilisez `example.com` dans la documentation publique et anonymisez les données réelles dans `artifacts/`.  
-- Conservez les preuves dans `artifacts/` et anonymisez-les avant publication.
+
+- N'exécutez jamais ces scripts sur des hôtes tiers ou des systèmes en production sans autorisation explicite.
+- Utilisez `example.com` dans la documentation publique et anonymisez les données réelles présentes dans `artifacts/`.
+- Conservez les preuves dans `artifacts/` et anonymisez-les avant toute publication.
+
+
 
 ## Prochaines étapes rapides
 1. Lisez `ROE_MINI.md`.  
