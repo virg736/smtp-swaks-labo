@@ -54,7 +54,7 @@
 
 ---
 
-## Pré-requis minimum
+## Prérequis minimum.
 
 - Connaissances Linux et réseau : **TCP/IP, DNS, SMTP**
 - Maîtrise de la ligne de commande et des outils `swaks`, `dig` et `openssl`
